@@ -82,7 +82,7 @@ function create_post_type() {
 // カスタム投稿にカテゴリーを追加//////////////////////////////////////////////////////
 function category_init() {
   register_taxonomy(
-    'member-category',//タクソノミー名
+    'member',//タクソノミー名
     'member',//投稿タイプを指定
     array(
       "label" => "カテゴリー",
@@ -91,7 +91,7 @@ function category_init() {
       "hierarchical" => true,
       "show_in_menu" => true,
       "query_var" => true,
-      "rewrite" => [ 'slug' => 'dep', 'with_front' => true, ], //カテゴリーのスラッグ
+      // "rewrite" => [ 'slug' => 'dep', 'with_front' => true, ], //カテゴリーのスラッグ
       "show_admin_column" => false,
       "show_in_rest" => true,
       "rest_base" => "dep",

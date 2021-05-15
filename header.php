@@ -25,7 +25,7 @@
                             <a href="page-coworking.html" class="header__link">サービス</a>
                         </li>
                         <li class="header__item">
-                            <a href="<?php echo get_permalink( get_page_by_path( 'member' )->ID );?>" class="header__link">メンバー紹介</a>
+                            <a href="<?php echo get_permalink( get_page_by_path( 'memberList' )->ID );?>" class="header__link">メンバー紹介</a>
                         </li>
                         <li class="header__item">
                             <a href="" class="header__link">料金</a>
