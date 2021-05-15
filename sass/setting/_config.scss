@@ -1,0 +1,12 @@
+$layout-width-inner: 1180px;
+$breakpoints: (
+  "sp": "screen and (max-width: 767px)",
+  "tab": "screen and (max-width: #{$layout-width-inner - 1px})",
+  "pc": "screen and (min-width: #{$layout-width-inner})",
+);
+body{
+  overflow-x: hidden;    font-family: noto-sans-cjk-jp, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(63, 63, 63);
+}

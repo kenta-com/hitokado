@@ -1,0 +1,29 @@
+$layout-width-inner: 1180px;
+$breakpoints: (
+    "sp": "screen and (max-width: 767px)",
+    "tab": "screen and (max-width: #{$layout-width-inner - 1px})",
+    "pc": "screen and (min-width: #{$layout-width-inner})",
+);
+
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+//SP
+@include mq(sp) {
+    body {
+        min-width: 320px;
+    }
+    body,
+    html {
+        height: 100%;
+        min-height: 100%;
+    }
+}
+//PC
+@include mq(pc) {
+    body {
+        width: 100%;
+    }
+}

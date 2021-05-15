@@ -1,0 +1,36 @@
+.about-mv {
+    margin-top: $title-top;
+    &__title {
+        text-align: center;
+        @include section-title;
+    }
+    &__subtitle {
+        text-align: center;
+        @include section-subtitle;
+    }
+    &__img {
+        display: block;
+        width: 100%;
+        margin-top: 53px;
+    }
+}
+.about-mv-content {
+    margin: 85px auto 0;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    &__title {
+        font-size: 34px;
+        letter-spacing: 1.7px;
+        @include notojp-m;
+        line-height: 1.5;
+    }
+    &__subtitle {
+        @include nova;
+        font-size: 12px;
+    }
+    &__text {
+        width: 580px;
+        line-height: 2;
+    }
+}

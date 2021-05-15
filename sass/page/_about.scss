@@ -1,0 +1,61 @@
+.about {
+    //案メーションの関係で10vhプラスしなければいけない
+    margin-top: calc(10vh + 80px);
+    &__title {
+        text-align: center;
+        @include section-title;
+    }
+    &__subtitle {
+        text-align: center;
+        font-weight: 100;
+        @include section-subtitle;
+    }
+}
+.about-box {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mq(tab) {
+        flex-direction: column;
+    }
+    &__img {
+        object-fit: cover;
+        width: 65%;
+        @include mq(tab) {
+            width: 100%;
+        }
+    }
+    &__content {
+        box-sizing: border-box;
+        padding-left: 60px;
+        width: 35%;
+        @include mq(tab) {
+            margin-top: 50px;
+            width: 100%;
+        }
+    }
+    &__txt {
+        line-height: 2;
+    }
+    &__btn {
+        width: 200px;
+        margin-top: 53px;
+        img {
+            transition: 0.5s;
+            &:hover {
+                @include btn-scale;
+            }
+            width: 100%;
+        }
+    }
+    &__title {
+        font-weight: 900;
+        line-height: 2;
+        font-size: 24px;
+    }
+    &__subtitle {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+}

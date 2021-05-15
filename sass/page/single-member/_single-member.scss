@@ -1,0 +1,44 @@
+.single-member {
+    margin-top: 163px;
+    &__title {
+        @include section-title;
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+        @include section-subtitle;
+    }
+    &__box {
+        margin-top: 55px;
+    }
+    &__img {
+        object-fit: cover;
+        height: 508px;
+        @include container(85%);
+        display: block;
+        z-index: -1;
+        position: relative;
+    }
+    &__content {
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 56px;
+        position: relative;
+        @include container(60%);
+        transform: translateY(-30px);
+    }
+    &__name {
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        font-weight: bold;
+    }
+    &__subname {
+        margin-top: 10px;
+        @include nova;
+    }
+    &__text {
+        margin-top: 36px;
+        line-height: 2;
+    }
+}

@@ -1,0 +1,10 @@
+@keyframes scale {
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@mixin btn-scale {
+    opacity: 0.9;
+    animation: scale 0.5s ease-in-out infinite alternate;
+}

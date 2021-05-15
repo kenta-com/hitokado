@@ -1,0 +1,51 @@
+.amenity {
+    @include section-space;
+    &__title {
+        @include section-title;
+        text-align: center;
+    }
+    &__subtitle {
+        @include section-subtitle;
+        text-align: center;
+    }
+}
+.amenity-box {
+    box-sizing: border-box;
+    padding: 50px;
+    @include mq(sp) {
+        padding: 25px;
+    }
+    margin: 50px auto 0;
+    background-color: $back-color;
+    width: 80%;
+}
+.amenity-content {
+    &:nth-of-type(2) {
+        margin-top: 47px;
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    &__box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__icon {
+        text-align: center;
+        width: 20%;
+        margin: 20px 0;
+        font-size: 20px;
+        @include mq(tab) {
+            width: 33.3333%;
+        }
+        @include mq(sp) {
+            width: 50%;
+        }
+    }
+    &__des {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,45 @@
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 80%;
+    margin: 30px 0 30px 10%;
+    &__logo {
+        max-width: 160px;
+        width: 100%;
+    }
+    &__img {
+        position: relative;
+        top: -10px;
+        width: 100%;
+        @include mq(tab) {
+            top: 0;
+            width: 80%;
+        }
+    }
+    &__nav {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        @include mq(tab) {
+            display: none;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        margin: 0 20px;
+        position: relative;
+        &:before {
+            content: '|';
+            transform: rotate(30deg);
+            position: absolute;
+            right: -20px;
+        }
+    }
+}

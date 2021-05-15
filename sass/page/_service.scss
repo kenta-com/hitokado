@@ -1,0 +1,70 @@
+.service {
+    @include section-space;
+    &__title {
+        @include section-title;
+        text-align: center;
+    }
+    &__subtitle {
+        @include section-subtitle;
+        text-align: center;
+    }
+    &-box {
+        &--reverce {
+            @include mq(pc) {
+                flex-direction: row-reverse;
+                //sectionのサブタイトルからの距離
+                padding-top: 50px;
+            }
+        }
+        padding-top: 110px;
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mq(tab) {
+            flex-direction: column;
+        }
+        &__img {
+            object-fit: cover;
+            width: 65%;
+            @include mq(tab) {
+                width: 100%;
+            }
+        }
+        &__content {
+            &--upper {
+                padding: 0 60px 0 0;
+            }
+            box-sizing: border-box;
+            padding: 0 0 0 60px;
+            width: 35%;
+            @include mq(tab) {
+                margin-top: 50px;
+                width: 100%;
+            }
+        }
+        &__txt {
+            line-height: 2;
+        }
+        &__btn {
+            width: 200px;
+            margin-top: 53px;
+            img {
+                transition: 0.5s;
+                &:hover {
+                    @include btn-scale;
+                }
+                width: 100%;
+            }
+        }
+        &__title {
+            font-weight: 900;
+            line-height: 2;
+            font-size: 24px;
+        }
+        &__subtitle {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+    }
+}

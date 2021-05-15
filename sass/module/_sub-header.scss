@@ -1,0 +1,89 @@
+/* humberger.simple1================================================ */
+.sub-header {
+    #sub-navi {
+        transition: all 0.6s;
+        overflow-y: auto;
+        padding-top: 40px;
+        width: 40vw;
+        height: 100vh;
+        z-index: 200;
+        top: 0;
+        right: -40vw;
+        @include mq(sp) {
+            right: -50vw;
+        }
+        background-color: #fff;
+        position: fixed;
+    }
+
+    .nav_btn {
+        width: 44px;
+        height: 60px;
+        z-index: 300;
+        top: 30px;
+        right: 5%;
+        transform: translateX(50%);
+        cursor: pointer;
+        position: fixed;
+    }
+
+    .hamburger_line {
+        transition: all 0.6s;
+        width: 34px;
+        height: 2px;
+        left: 5px;
+        background-color: #000;
+        position: relative;
+    }
+
+    .hamburger_line1 {
+        position: absolute;
+        top: 20px;
+    }
+    .hamburger_line2 {
+        position: absolute;
+        top: 30px;
+    }
+    .hamburger_line3 {
+        position: absolute;
+        top: 40px;
+    }
+
+    .nav_bg {
+        opacity: 0;
+        transition: all 0.6s;
+        width: 100vw;
+        height: 100vh;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        background-color: #000;
+        cursor: pointer;
+        position: fixed;
+    }
+}
+/* 表示された時用のCSS */
+.nav_open #sub-header #sub-navi {
+    right: 0;
+}
+
+.nav_open .nav_bg {
+    opacity: 0.8;
+    visibility: visible;
+}
+
+.nav_open .hamburger_line1 {
+    transform: rotate(45deg);
+    top: 20px;
+}
+
+.nav_open .hamburger_line2 {
+    width: 0;
+    left: 50%;
+}
+
+.nav_open .hamburger_line3 {
+    transform: rotate(-45deg);
+    top: 20px;
+}

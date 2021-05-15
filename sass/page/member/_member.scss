@@ -1,0 +1,42 @@
+.member {
+    margin-top: $title-top;
+    &__title {
+        @include section-title;
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+        @include section-subtitle;
+        margin-bottom: 130px;
+
+    }
+    &-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-about {
+        text-align: center;
+        margin-top: 52px;
+        width: 20%;
+        @include mq (tab) {
+            width: 33.333%;
+        }
+        @include mq (sp) {
+            width: 50%;
+        }
+        &__img {
+            width: 178px;
+            height: 178px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        &__name {
+            font-weight: bold;
+            line-height: 2;
+        }
+        &__caption {
+            color: #8E8E8E;
+            letter-spacing: 1.4px;
+        }
+    }
+}

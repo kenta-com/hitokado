@@ -1,0 +1,55 @@
+.access{
+  @include section-space;
+  &__title{
+    @include section-title;
+    text-align: center;
+  }
+  &__subtitle{
+    text-align: center;
+    @include section-subtitle;
+    margin-bottom: 50px;
+  }
+}
+iframe{
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+width: 50%;
+@include mq(sp){
+  height: 300px;
+  width: 80%;
+}
+}
+.access-table{
+  width: 50%;
+  @include mq(sp){
+    width: 80%;
+  }
+  margin: 0 auto;
+  &__row{
+    display: flex;
+    flex-direction: column;
+    &:nth-child(1){
+      margin-top: 94px;
+    }
+    &:nth-child(2){
+      margin-top: 64px;
+    }
+    &:nth-child(3){
+      margin-top: 68px;
+    }
+    &:nth-child(4){
+      margin-top:47px;
+    }
+  }
+  &__head{
+    font-weight: 100;
+    line-height: 2;
+    &--bold{
+      font-weight: 900;
+    }
+  }
+  &__data{
+    line-height: 1.5;
+  }
+}

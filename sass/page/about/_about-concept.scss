@@ -1,0 +1,50 @@
+.about-concept {
+    margin-top: 95px;
+    &__title {
+        @include section-title;
+        text-align: center;
+    }
+    &__subtitle {
+        @include section-subtitle;
+        text-align: center;
+    }
+    &__caption {
+        margin-top: 58px;
+        font-family: ten-mincho, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 34px;
+        line-height: 1.5;
+    }
+    &__subcaption {
+        margin-top: 11px;
+        font-size: 12px;
+    }
+}
+.about-concept-box {
+    margin-top: 40px;
+    position: relative;
+    height: 806px;
+    &__text {
+        position: absolute;
+        line-height: 2;
+        left: 0;
+        width: 60%;
+        // top:10%;
+        top: 50%;
+        transform: translateY(-50%);
+        span {
+            display: block;
+            margin: 18px;
+        }
+    }
+    &__img {
+        top: 0;
+        z-index: -1;
+        position: absolute;
+        left: 50%;
+        object-fit: cover;
+        width: 50%;
+        height: 806px;
+    }
+}

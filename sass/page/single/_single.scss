@@ -1,0 +1,29 @@
+.single-news {
+    width: 60%;
+    margin: $title-top auto 0;
+    &__title {
+        text-align: center;
+        @include section-title;
+    }
+    &__cat {
+        letter-spacing: 1.6px;
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+        color: #8E8E8E;
+        display: inline-block;
+        text-align: center;
+        border-bottom: 1px solid #8E8E8E;
+        @include nova;
+    }
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        margin-top: 55px;
+        height: 460px;
+    }
+    &__content {
+        line-height: 4;
+        margin-top: 48px;
+    }
+}

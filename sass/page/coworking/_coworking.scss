@@ -1,0 +1,50 @@
+.coworking {
+    margin-top: $title-top;
+    &__title {
+        @include section-title;
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+        @include section-subtitle;
+    }
+    &__caption {
+        margin: 50px auto 0;
+        width: 60%;
+        line-height: 2;
+    }
+}
+.coworking-box {
+    &--reverce {
+        flex-direction: row-reverse;
+    }
+    margin-top: 75px;
+    &:nth-of-type(1) {
+        margin-top: 122px;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__content {
+        width: 35%;
+    }
+    &__title {
+        font-size: 26px;
+        letter-spacing: 2.6px;
+        font-weight: bold;
+    }
+    &__text {
+        margin-top: 24px;
+        line-height: 2;
+    }
+    &__detail {
+        line-height: 2;
+        margin-top: 44px;
+        color: #8E8E8E;
+        font-size: 13px;
+    }
+    &__img {
+        width: 60%;
+        object-fit: cover;
+    }
+}

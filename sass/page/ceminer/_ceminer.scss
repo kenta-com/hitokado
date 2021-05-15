@@ -1,0 +1,129 @@
+.ceminer-mv {
+    margin-top: $title-top;
+    &__title {
+        text-align: center;
+        @include section-title;
+    }
+    &__subtitle {
+        text-align: center;
+        @include section-subtitle;
+    }
+    &__img {
+        display: block;
+        width: 100%;
+        margin-top: 53px;
+    }
+    &__caption {
+        margin: 50px auto 0;
+        width: 60%;
+        line-height: 2;
+    }
+}
+.ceminer-about {
+    margin-top: $title-top;
+    &__title {
+        @include section-title;
+        text-align: center;
+    }
+    &__subtitle {
+        @include section-subtitle;
+        text-align: center;
+    }
+    &-container {
+        margin-top: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &-box {
+        display: block;
+        @include mq(pc) {
+            width: calc(33.333% - 40px);
+            margin-right: 60px;
+            &:nth-of-type(3n) {
+                margin: 0;
+            }
+            &:nth-of-type(n + 4) {
+                margin-top: 160px;
+            }
+        }
+        @include mq(tab) {
+            width: calc(50% - 30px);
+            margin-right: 60px;
+            &:nth-of-type(2n) {
+                margin: 0;
+            }
+            &:nth-of-type(n + 3) {
+                margin-top: 160px;
+            }
+        }
+        @include mq(sp) {
+            width: 100%;
+            margin: 0;
+            &:nth-of-type(n + 2) {
+                margin-top: 160px;
+            }
+        }
+        &__img {
+            width: 100%;
+            height: 237px;
+            object-fit: cover;
+        }
+        &__title {
+            margin-top: 30px;
+        }
+    }
+    &-info {
+        margin-top: 26px;
+        display: flex;
+        color: #8E8E8E;
+        line-height: 2;
+    }
+}
+.ceminer-member {
+    margin-top: 163px;
+    &__title {
+        @include section-title;
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+        @include section-subtitle;
+    }
+    &__box {
+        margin-top: 55px;
+        &:nth-of-type(2) {
+            margin-top: 100px;
+        }
+    }
+    &__img {
+        object-fit: cover;
+        height: 508px;
+        @include container(85%);
+        display: block;
+        z-index: -1;
+        position: relative;
+    }
+    &__content {
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 56px;
+        position: relative;
+        @include container(60%);
+        transform: translateY(-30px);
+    }
+    &__name {
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        font-weight: bold;
+    }
+    &__subname {
+        margin-top: 10px;
+        @include nova;
+    }
+    &__text {
+        margin-top: 36px;
+        line-height: 2;
+    }
+}
