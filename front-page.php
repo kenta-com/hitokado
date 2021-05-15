@@ -45,32 +45,31 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <?php
-                              if(have_posts()) :
-                                while(have_posts()) :
-                                  the_post();
-                                  ?>
+                if(have_posts()) :
+                while(have_posts()) :
+                the_post();
+                ?>
                 <!-- ループしたいHTMLをここに置く -->
                 <div class="swiper-slide">
                     <a class="news-box" href="<?php the_permalink(); ?>">
                     <?php if(has_post_thumbnail()): ?>
-   <?php the_post_thumbnail(null, array('class' => 'news-box__img')); ?>
- <?php else :?>
+                    <?php the_post_thumbnail(null, array('class' => 'news-box__img')); ?>
+                    <?php else :?>
 <img src="<?php echo get_template_directory_uri(); ?>/img/no-img.png" alt="" class="news-box__img" />
 <?php endif; ?>
                         <p class="news-box__title"><?php the_title()?></p>
                         <div class="news-info">
                             <p class="news-info__date"><?php the_time('Y/m/d'); ?></p>
                             <?php
-                                      $category = get_the_category();
-                                      $cat_name = $category[0]->cat_name;
+                                $category = get_the_category();
+                                $cat_name = $category[0]->cat_name;
                                     ?>
                             <p class="news-info__cat"><?php echo $cat_name; ?></p>
                         </div>
                     </a>
                 </div>
-            <?php
-                                endwhile;
-                              else:
+            <?php endwhile;
+                else:
                                 ?>
                 <?php endif; ?>
             </div>

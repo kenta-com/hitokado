@@ -6,7 +6,7 @@
                 </h3>
                 <h4 class="news-galary__subtitle">お知らせ</h4>
                 <div class="news-galary-container">
-                <?php query_posts( 'posts_per_page=5' );
+                <?php query_posts( 'posts_per_page=1' );
 if (have_posts()) : while (have_posts()) : the_post(); ?>
 <a class="news-galary-box" href="<?php the_permalink(); ?>">
 <?php if(has_post_thumbnail()): ?>
@@ -24,8 +24,11 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
                             <p class="news-galary-info__cat"><?php echo $cat_name; ?></p>
                         </div>
                     </a>
-<?php endwhile; else : ?>
+                    <?php endwhile;
+
+else : ?>
 <?php endif; ?>
+<?php if( function_exists("the_pagination") ) the_pagination(); ?>
                 </div>
             </div>
         </main>
