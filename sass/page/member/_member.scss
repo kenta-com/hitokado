@@ -1,5 +1,7 @@
 .member {
-    margin-top: $title-top;
+    width: 80%;
+    margin:163px auto 0 auto;
+    // margin-top: $title-top;
     &__title {
         @include section-title;
         text-align: center;

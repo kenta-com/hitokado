@@ -16,13 +16,13 @@ the_post();
 <?php endif; ?>
 <div class="single-member__content">
     <p class="single-member__name"><?php the_title();?></p>
-    <p class="single-member__subname"><?php the_excerpt()?></p>
-    <p class="single-member__text"><?php the_content()?></p>
+    <p class="single-member__subname"><?php the_excerpt();?></p>
+    <p class="single-member__text"><?php the_content();?></p>
 </div>
 
                 </div>
-                <div class="single-member-detail">
-                    この限り席のところこうしたお笑いは私中が押しますかと久原さんに立っまします、魚の絶対なけれにおいてご抑圧たいませでて、古参の時に元で時間だけの世の中に元来しがしまいて、これからの元来に罹っからその時を至極散らかすなんと出れたものないて、ないないないてはっきりご国家しなのなないます。ところが錐か危険か学習をなりたと、以後ごろ菓子に稼ぎていな以上にご意見の十一月となっましん。
+                <div class="single-member__detail">
+                <?php the_content();?>
                 </div>
             </section>
         </main>

@@ -3,7 +3,7 @@
     right: 0;
     top: 0;
     position: fixed;
-    width: 10%;
+    width: 100px;
     margin-top: 10%;
     height: 90%;
     display: flex;
@@ -19,6 +19,7 @@
     }
     &__fav {
         margin: 5px 0;
+        transform: rotate(90deg);
     }
     &__slush {
         transform: rotate(30deg);

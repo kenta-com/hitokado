@@ -4,7 +4,7 @@ body {
   font-family: noto-sans-cjk-jp, sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #3f3f3f;
+  text-align: justify;
 }
 
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
@@ -486,6 +486,20 @@ template {
   }
 }
 
+.btn {
+  margin: 120px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 3.1px;
+  width: 60%;
+  max-width: calc(1180px *0.8);
+}
+
 .header {
   position: fixed;
   display: flex;
@@ -494,17 +508,25 @@ template {
   top: 0;
   left: 0;
   width: 80%;
-  margin: 30px 0 30px 10%;
+  height: 100px;
+  margin: 0 0 0 10%;
 }
 
 .header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 160px;
   width: 100%;
 }
 
-.header__img {
+.header__logo a {
   position: relative;
-  top: -10px;
+  top: -8px;
+  display: block;
+}
+
+.header__img {
   width: 100%;
 }
 
@@ -539,29 +561,23 @@ template {
 
 .header__item:before {
   content: '|';
-  transform: rotate(30deg);
+  transform: rotate(25deg);
   position: absolute;
   right: -20px;
 }
 
 /* humberger.simple1================================================ */
 .sub-header #sub-navi {
-  transition: all 0.6s;
+  transition: ease-out 0.4s;
   overflow-y: auto;
   padding-top: 40px;
-  width: 40vw;
+  width: 100vw;
   height: 100vh;
   z-index: 200;
   top: 0;
-  right: -40vw;
+  right: -100vw;
   background-color: #fff;
   position: fixed;
-}
-
-@media screen and (max-width: 767px) {
-  .sub-header #sub-navi {
-    right: -50vw;
-  }
 }
 
 .sub-header .nav_btn {
@@ -569,7 +585,7 @@ template {
   height: 60px;
   z-index: 300;
   top: 30px;
-  right: 5%;
+  right: 50px;
   transform: translateX(50%);
   cursor: pointer;
   position: fixed;
@@ -652,7 +668,7 @@ template {
   right: 0;
   top: 0;
   position: fixed;
-  width: 10%;
+  width: 100px;
   margin-top: 10%;
   height: 90%;
   display: flex;
@@ -673,6 +689,7 @@ template {
 
 .contact__fav {
   margin: 5px 0;
+  transform: rotate(90deg);
 }
 
 .contact__slush {
@@ -685,7 +702,7 @@ template {
   top: 0;
   left: 0;
   position: fixed;
-  width: 10%;
+  width: 100px;
   margin-top: 10%;
   height: 90%;
   display: flex;
@@ -696,6 +713,7 @@ template {
   font-family: gill-sans-nova, sans-serif;
   font-weight: 500;
   font-style: normal;
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 1179px) {
@@ -710,12 +728,6 @@ template {
   }
 }
 
-.container {
-  max-width: 1180px;
-  width: 80%;
-  margin: 0 auto;
-}
-
 .border {
   display: block;
   border-bottom: 1px solid #707070;
@@ -723,14 +735,10 @@ template {
   width: 60px;
 }
 
-.main {
-  max-width: 1180px;
-  width: 80%;
-  margin: 0 auto;
-}
-
 .amenity {
-  margin-top: 174px;
+  width: 80%;
+  max-width: 1180px;
+  margin: 174px auto 0 auto;
 }
 
 .amenity__title {
@@ -751,12 +759,26 @@ template {
   text-align: center;
 }
 
+.amenity-frame {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amenity-frame__text {
+  line-height: 2;
+  width: calc(50% - 46px);
+  margin-right: 46px;
+}
+
+.amenity-frame__text:nth-child(2) {
+  margin: 0;
+}
+
 .amenity-box {
   box-sizing: border-box;
   padding: 50px;
   margin: 50px auto 0;
   background-color: #f5f5f5;
-  width: 80%;
 }
 
 @media screen and (max-width: 767px) {
@@ -784,7 +806,7 @@ template {
   text-align: center;
   width: 20%;
   margin: 20px 0;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 @media screen and (max-width: 1179px) {
@@ -805,6 +827,9 @@ template {
 }
 
 .price {
+  width: 65%;
+  max-width: calc(1180px *0.65);
+  margin: 0 auto;
   margin-top: 174px;
 }
 
@@ -827,8 +852,7 @@ template {
 }
 
 .price-box {
-  width: 50%;
-  margin: 50px auto 0;
+  margin: 50px 0 0 0;
 }
 
 @media screen and (max-width: 1179px) {
@@ -865,8 +889,7 @@ template {
 }
 
 .price-box2 {
-  width: 50%;
-  margin: 72px auto 0;
+  margin: 72px 0 0 0;
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -897,7 +920,67 @@ template {
   margin-top: 20px;
 }
 
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 107px 0 40px 0;
+  position: relative;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.pagination span, .pagination a {
+  display: block;
+  width: auto;
+  margin: 0  16px;
+  padding: 0 8px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 16px;
+}
+
+/* ページ番号 */
+.pagination .pager {
+  width: 26px;
+}
+
+/* ホバー時 & 現在のページ */
+.pagination .current {
+  position: relative;
+}
+
+.pagination .current::before {
+  position: absolute;
+  content: '';
+  border-bottom: 4px solid black;
+  width: 20px;
+  top: 50%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+}
+
+/* 前へ */
+.pagination a.prev {
+  margin-right: 16px;
+}
+
+/* 次へ */
+.pagination a.next {
+  margin-left: 16px;
+}
+
+/* 最初へ */
+/* 最後へ */
+/* Page x / y */
+.pagination span.page_num {
+  display: none;
+}
+
 .about {
+  max-width: 1180px;
+  width: 80%;
+  margin: 0 auto;
   margin-top: calc(10vh + 80px);
 }
 
@@ -921,7 +1004,7 @@ template {
 }
 
 .about-box {
-  padding-top: 50px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -989,6 +1072,8 @@ template {
 
 .mv {
   position: relative;
+  margin: 0 auto;
+  width: calc(100% - 200px);
   top: 100px;
   height: 90vh;
   overflow: hidden;
@@ -1081,7 +1166,9 @@ template {
 }
 
 .news {
-  margin-top: 174px;
+  margin: 174px auto 0 auto;
+  max-width: 1180px;
+  width: 80%;
 }
 
 .news__title {
@@ -1140,12 +1227,13 @@ template {
 }
 
 .news-info__cat {
-  line-height: 1.5;
   border-bottom: 1px solid #8E8E8E;
 }
 
 .service {
-  margin-top: 174px;
+  margin: 174px auto 0 auto;
+  max-width: 1180px;
+  width: 80%;
 }
 
 .service__title {
@@ -1167,10 +1255,7 @@ template {
 }
 
 .service-box {
-  padding-top: 110px;
-  max-width: 1180px;
-  width: 80%;
-  margin: 0 auto;
+  margin-top: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1179,7 +1264,7 @@ template {
 @media screen and (min-width: 1180px) {
   .service-box--reverce {
     flex-direction: row-reverse;
-    padding-top: 50px;
+    margin-top: 50px;
   }
 }
 
@@ -1202,12 +1287,12 @@ template {
 
 .service-box__content {
   box-sizing: border-box;
-  padding: 0 0 0 60px;
+  margin: 0 0 0 60px;
   width: 35%;
 }
 
 .service-box__content--upper {
-  padding: 0 60px 0 0;
+  margin: 0 60px 0 0;
 }
 
 @media screen and (max-width: 1179px) {
@@ -1219,6 +1304,7 @@ template {
 
 .service-box__txt {
   line-height: 2;
+  margin-top: 50px;
 }
 
 .service-box__btn {
@@ -1243,7 +1329,6 @@ template {
 }
 
 .service-box__subtitle {
-  margin-bottom: 20px;
   font-size: 20px;
 }
 
@@ -1270,6 +1355,9 @@ template {
 }
 
 .faq__btn {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: 50px;
   display: block;
 }
@@ -1285,22 +1373,16 @@ template {
 }
 
 .faq__back {
-  z-index: -1;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 100vw;
   background-image: url(../img/faq-back.png);
+  background-size: cover;
 }
 
 .faq-box {
   width: 80%;
   margin: 50px auto 0 auto;
   background-size: cover;
-  justify-content: center;
-  padding: 56px;
+  justify-content: space-between;
+  padding: 56px 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1308,7 +1390,6 @@ template {
 .faq-content {
   color: #fff;
   width: 45%;
-  padding: 10px;
 }
 
 @media screen and (max-width: 1179px) {
@@ -1324,11 +1405,11 @@ template {
 }
 
 .faq-content:nth-child(3) {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .faq-content:nth-child(4) {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .faq-content__question {
@@ -1337,7 +1418,7 @@ template {
 }
 
 .faq-content__answer {
-  line-height: 1.5;
+  line-height: 2;
   margin-top: 10px;
 }
 
@@ -1367,6 +1448,7 @@ template {
 iframe {
   position: relative;
   left: 50%;
+  height: 500px;
   transform: translateX(-50%);
   width: 50%;
 }
@@ -1379,7 +1461,7 @@ iframe {
 }
 
 .access-table {
-  width: 50%;
+  width: 42%;
   margin: 0 auto;
 }
 
@@ -1424,7 +1506,9 @@ iframe {
 }
 
 .about-mv {
-  margin-top: 163px;
+  margin: 174px auto 0 auto;
+  max-width: 1180px;
+  width: 80%;
 }
 
 .about-mv__title {
@@ -1452,8 +1536,7 @@ iframe {
 }
 
 .about-mv-content {
-  margin: 85px auto 0;
-  width: 85%;
+  margin: 85px auto 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -1502,7 +1585,9 @@ iframe {
 }
 
 .about-concept__caption {
-  margin-top: 58px;
+  max-width: 1180px;
+  width: 80%;
+  margin: 58px auto 0 auto;
   font-family: ten-mincho, serif;
   font-weight: 400;
   font-style: normal;
@@ -1511,6 +1596,9 @@ iframe {
 }
 
 .about-concept__subcaption {
+  width: 80%;
+  max-width: 1180px;
+  margin: 58px auto 0 auto;
   margin-top: 11px;
   font-size: 12px;
 }
@@ -1519,15 +1607,18 @@ iframe {
   margin-top: 40px;
   position: relative;
   height: 806px;
+  display: flex;
+  align-items: center;
 }
 
 .about-concept-box__text {
-  position: absolute;
+  margin: 0 auto;
   line-height: 2;
   left: 0;
   width: 60%;
-  top: 50%;
-  transform: translateY(-50%);
+  max-width: 885px;
+  position: relative;
+  left: -10%;
 }
 
 .about-concept-box__text span {
@@ -1536,13 +1627,15 @@ iframe {
 }
 
 .about-concept-box__img {
-  top: 0;
+  top: 50%;
+  max-width: calc(1336px / 2);
+  transform: translateY(-50%);
   z-index: -1;
   position: absolute;
   left: 50%;
   object-fit: cover;
   width: 50%;
-  height: 806px;
+  height: 706px;
 }
 
 .about-member {
@@ -1579,7 +1672,7 @@ iframe {
   object-fit: cover;
   height: 508px;
   max-width: 1180px;
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
   display: block;
   z-index: -1;
@@ -1592,9 +1685,9 @@ iframe {
   box-sizing: border-box;
   padding: 56px;
   position: relative;
-  max-width: 1180px;
-  width: 60%;
   margin: 0 auto;
+  width: 65%;
+  max-width: calc(1336px *0.65);
   transform: translateY(-30px);
 }
 
@@ -1617,7 +1710,9 @@ iframe {
 }
 
 .news-galary {
-  margin-top: 163px;
+  margin: 163px auto 0 auto;
+  max-width: 1180px;
+  width: 80%;
 }
 
 .news-galary__title {
@@ -1706,13 +1801,12 @@ iframe {
 }
 
 .news-galary-info__cat {
-  line-height: 1.5;
+  display: block;
   border-bottom: 1px solid #8E8E8E;
 }
 
 .single-news {
-  width: 60%;
-  margin: 163px auto 0;
+  margin: 163px auto 0 auto;
 }
 
 .single-news__title {
@@ -1732,24 +1826,33 @@ iframe {
   transform: translateX(-50%);
   left: 50%;
   color: #8E8E8E;
-  display: inline-block;
   text-align: center;
-  border-bottom: 1px solid #8E8E8E;
   font-family: gill-sans-nova, sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
+.single-news__cat:before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  width: 51px;
+  border-bottom: 1px solid #8E8E8E;
+}
+
 .single-news__img {
-  width: 100%;
+  width: calc(100% - 200px);
   object-fit: cover;
-  margin-top: 55px;
-  height: 460px;
+  display: block;
+  margin: 55px auto 0;
+  height: 470px;
 }
 
 .single-news__content {
+  width: calc(80% *0.65);
+  max-width: 1180px;
   line-height: 4;
-  margin-top: 48px;
+  margin: 48px auto 0 auto;
 }
 
 .ceminer-mv {
@@ -1776,13 +1879,15 @@ iframe {
 
 .ceminer-mv__img {
   display: block;
-  width: 100%;
-  margin-top: 53px;
+  width: 80%;
+  max-width: 1180px;
+  margin: 53px auto 0;
 }
 
 .ceminer-mv__caption {
-  margin: 50px auto 0;
-  width: 60%;
+  margin: 72px auto 0;
+  width: calc(80% *0.65);
+  max-width: calc(1180px *0.65);
   line-height: 2;
 }
 
@@ -1809,7 +1914,9 @@ iframe {
 }
 
 .ceminer-about-container {
-  margin-top: 120px;
+  width: 80%;
+  max-width: 1180px;
+  margin: 120px auto 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1869,7 +1976,15 @@ iframe {
   margin-top: 26px;
   display: flex;
   color: #8E8E8E;
-  line-height: 2;
+}
+
+.ceminer-about-info__date {
+  margin-right: 10px;
+}
+
+.ceminer-about-info__cat {
+  line-height: 1.5;
+  border-bottom: 1px solid #8E8E8E;
 }
 
 .ceminer-member {
@@ -1919,9 +2034,9 @@ iframe {
   box-sizing: border-box;
   padding: 56px;
   position: relative;
-  max-width: 1180px;
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
+  max-width: calc(1336px *0.65);
   transform: translateY(-30px);
 }
 
@@ -1968,10 +2083,14 @@ iframe {
 .coworking__caption {
   margin: 50px auto 0;
   width: 60%;
+  max-width: calc(1180px *0.6);
   line-height: 2;
 }
 
 .coworking-box {
+  max-width: 1180px;
+  width: 80%;
+  margin: 0 auto;
   margin-top: 75px;
   display: flex;
   justify-content: space-between;
@@ -2014,7 +2133,8 @@ iframe {
 }
 
 .member {
-  margin-top: 163px;
+  width: 80%;
+  margin: 163px auto 0 auto;
 }
 
 .member__title {
@@ -2106,7 +2226,7 @@ iframe {
   object-fit: cover;
   height: 508px;
   max-width: 1180px;
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
   display: block;
   z-index: -1;
@@ -2119,8 +2239,8 @@ iframe {
   box-sizing: border-box;
   padding: 56px;
   position: relative;
-  max-width: 1180px;
-  width: 60%;
+  max-width: calc(1336px *0.65);
+  width: 65%;
   margin: 0 auto;
   transform: translateY(-30px);
 }
@@ -2141,6 +2261,13 @@ iframe {
 .single-member__text {
   margin-top: 36px;
   line-height: 2;
+}
+
+.single-member__detail {
+  max-width: calc(1336px *0.65);
+  width: 65%;
+  margin: 120px auto 0;
+  line-height: 3;
 }
 
 .swiper-container {

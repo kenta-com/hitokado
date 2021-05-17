@@ -9,7 +9,9 @@
         text-align: center;
     }
     &__caption {
-        margin-top: 58px;
+        max-width: 1180px;
+        width: 80%;
+        margin:58px auto 0 auto;
         font-family: ten-mincho, serif;
         font-weight: 400;
         font-style: normal;
@@ -17,6 +19,9 @@
         line-height: 1.5;
     }
     &__subcaption {
+        width: 80%;
+        max-width: 1180px;
+        margin:58px auto 0 auto;
         margin-top: 11px;
         font-size: 12px;
     }
@@ -25,26 +30,32 @@
     margin-top: 40px;
     position: relative;
     height: 806px;
+    display: flex;
+    align-items: center;
     &__text {
-        position: absolute;
+        margin: 0 auto;
         line-height: 2;
         left: 0;
+        //80% : 1180px = 60 : X
+        // X = 885px
         width: 60%;
-        // top:10%;
-        top: 50%;
-        transform: translateY(-50%);
+        max-width: 885px;
+        position: relative;
+        left: -10%;
         span {
             display: block;
             margin: 18px;
         }
     }
     &__img {
-        top: 0;
+        top: 50%;
+        max-width: calc(1336px / 2);
+        transform: translateY(-50%);
         z-index: -1;
         position: absolute;
         left: 50%;
         object-fit: cover;
         width: 50%;
-        height: 806px;
+        height: 706px;
     }
 }

@@ -14,7 +14,7 @@
     &__img {
         object-fit: cover;
         height: 508px;
-        @include container(85%);
+        @include container(75%);
         display: block;
         z-index: -1;
         position: relative;
@@ -25,7 +25,9 @@
         box-sizing: border-box;
         padding: 56px;
         position: relative;
-        @include container(60%);
+        max-width: calc(1336px *0.65);
+        width: 65%;
+        margin: 0 auto;
         transform: translateY(-30px);
     }
     &__name {
@@ -40,5 +42,11 @@
     &__text {
         margin-top: 36px;
         line-height: 2;
+    }
+    &__detail{
+        max-width: calc(1336px *0.65);
+        width: 65%;
+        margin:120px auto 0;
+        line-height: 3;
     }
 }

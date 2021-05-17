@@ -1,17 +1,14 @@
 /* humberger.simple1================================================ */
 .sub-header {
     #sub-navi {
-        transition: all 0.6s;
+        transition: ease-out 0.4s;
         overflow-y: auto;
         padding-top: 40px;
-        width: 40vw;
+        width: 100vw;
         height: 100vh;
         z-index: 200;
         top: 0;
-        right: -40vw;
-        @include mq(sp) {
-            right: -50vw;
-        }
+        right: -100vw;
         background-color: #fff;
         position: fixed;
     }
@@ -21,7 +18,7 @@
         height: 60px;
         z-index: 300;
         top: 30px;
-        right: 5%;
+        right: 50px;
         transform: translateX(50%);
         cursor: pointer;
         position: fixed;

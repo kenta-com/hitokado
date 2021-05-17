@@ -1,5 +1,8 @@
 .news-galary {
-    margin-top: $title-top;
+    // margin-top: $margin-top;
+    margin: 163px auto 0 auto;
+    max-width: 1180px;
+    width: 80%;
     &__title {
         @include section-title;
         text-align: center;
@@ -60,7 +63,7 @@
             margin-right: 10px;
         }
         &__cat {
-            line-height: 1.5;
+            display: block;
             border-bottom: 1px solid #8E8E8E;
         }
     }

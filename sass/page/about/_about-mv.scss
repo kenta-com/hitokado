@@ -1,5 +1,7 @@
 .about-mv {
-    margin-top: $title-top;
+    margin: 174px auto 0 auto;
+    max-width: 1180px;
+    width: 80%;
     &__title {
         text-align: center;
         @include section-title;
@@ -15,8 +17,7 @@
     }
 }
 .about-mv-content {
-    margin: 85px auto 0;
-    width: 85%;
+    margin: 85px auto 0 auto;
     display: flex;
     justify-content: space-between;
     &__title {

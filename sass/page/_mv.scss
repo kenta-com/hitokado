@@ -1,6 +1,8 @@
 .mv {
     position: relative;
     //headerの高さ
+    margin: 0 auto;
+    width: calc(100% - 200px);
     top: 100px;
     height: 90vh;
     @include mq(sp) {

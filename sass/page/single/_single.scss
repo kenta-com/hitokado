@@ -1,6 +1,5 @@
 .single-news {
-    width: 60%;
-    margin: $title-top auto 0;
+    margin: $title-top auto 0 auto;
     &__title {
         text-align: center;
         @include section-title;
@@ -11,19 +10,27 @@
         transform: translateX(-50%);
         left: 50%;
         color: #8E8E8E;
-        display: inline-block;
         text-align: center;
-        border-bottom: 1px solid #8E8E8E;
         @include nova;
+        &:before{
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            width: 51px;
+            border-bottom: 1px solid #8E8E8E;
+        }
     }
     &__img {
-        width: 100%;
+        width:calc(100% - 200px);
         object-fit: cover;
-        margin-top: 55px;
-        height: 460px;
+        display: block;
+        margin: 55px auto 0;
+        height: 470px;
     }
     &__content {
+        width: calc(80% *0.65);
+        max-width: 1180px;
         line-height: 4;
-        margin-top: 48px;
+        margin: 48px auto 0 auto;
     }
 }

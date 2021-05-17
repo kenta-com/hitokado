@@ -1,4 +1,5 @@
 .about {
+    @include container;
     //案メーションの関係で10vhプラスしなければいけない
     margin-top: calc(10vh + 80px);
     &__title {
@@ -12,7 +13,7 @@
     }
 }
 .about-box {
-    padding-top: 50px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;

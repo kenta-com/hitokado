@@ -16,13 +16,13 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="page-about.html" class="header__link">HITOKADOについて</a>
+                            <a href="<?php echo get_permalink( get_page_by_path( 'about' )->ID );?>" class="header__link">HITOKADOについて</a>
                         </li>
                         <li class="header__item">
-                            <a href="archive-news.html" class="header__link">お知らせ</a>
+                            <a href="<?php echo get_permalink( get_page_by_path( 'news' )->ID );?>" class="header__link">お知らせ</a>
                         </li>
                         <li class="header__item">
-                            <a href="page-coworking.html" class="header__link">サービス</a>
+                            <a href="<?php echo get_permalink( get_page_by_path( 'coworking' )->ID );?>" class="header__link">サービス</a>
                         </li>
                         <li class="header__item">
                             <a href="<?php echo get_permalink( get_page_by_path( 'memberList' )->ID );?>" class="header__link">メンバー紹介</a>

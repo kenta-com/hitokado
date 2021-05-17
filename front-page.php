@@ -44,6 +44,12 @@
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
+            <?php
+		    $cat = get_the_category();
+            $slug = $cat[0]->slug;
+            $name = $cat[0]->name;
+            $link = get_category_link($cat[0]->cat_ID);
+			?>
                 <?php
                 if(have_posts()) :
                 while(have_posts()) :
@@ -60,11 +66,7 @@
                         <p class="news-box__title"><?php the_title()?></p>
                         <div class="news-info">
                             <p class="news-info__date"><?php the_time('Y/m/d'); ?></p>
-                            <?php
-                                $category = get_the_category();
-                                $cat_name = $category[0]->cat_name;
-                                    ?>
-                            <p class="news-info__cat"><?php echo $cat_name; ?></p>
+                            <object data="" type=""><a href="<?php echo $link; ?>" class="news-info__cat"><?php echo $name; ?></a></object>
                         </div>
                     </a>
                 </div>
@@ -119,6 +121,10 @@
         <h3 class="amenity__title">LIST OF AMENITIES</h3>
         <h4 class="amenity__subtitle">設備・アメニティ一覧</h4>
         <div class="amenity-box">
+        <div class="amenity-frame">
+                        <p class="amenity-frame__text">経営哲学から実務的なスキルアップまで、ここでしか学べないセミナーや一風変わったイベントを開催。ときには会員だけでなく、一般の方も参加可能な企画もお届けいたします。</p>
+                        <p class="amenity-frame__text">経営哲学から実務的なスキルアップまで、ここでしか学べないセミナーや一風変わったイベントを開催。ときには会員だけでなく、一般の方も参加可能な企画もお届けいたします。</p>
+                    </div>
             <div class="amenity-content">
                 <p class="amenity-content__title">有料</p>
                 <div class="amenity-content__box">

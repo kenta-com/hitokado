@@ -4,7 +4,7 @@
                 <p class="coworking__title">COWORKING SPACE</p>
                 <p class="coworking__subtitle">コワーキングスペースについて</p>
                 <p class="coworking__caption">この限り席のところこうしたお笑いは私中が押しますかと久原さんに立っまします、魚の絶対なけれにおいてご抑圧たいませでて、古参の時に元で時間だけの世の中に元来しがしまいて、これからの元来に罹っからその時を至極散らかすなんと出れたものないて、ないないないてはっきりご国家しなのなないます。ところが錐か危険か学習をなりたと、以後ごろ菓子に稼ぎていな以上にご意見の十一月となっましん。</p>
-                <div class="coworking-box">
+                <div class="coworking-box coworking-box--reverce">
                     <div class="coworking-box__content">
                         <p class="coworking-box__title">交流スペース</p>
                         <p class="coworking-box__text">
@@ -21,7 +21,7 @@
                         alt=""
                         class="coworking-box__img">
                 </div>
-                <div class="coworking-box coworking-box--reverce">
+                <div class="coworking-box">
                     <div class="coworking-box__content">
                         <p class="coworking-box__title">集中スペース</p>
                         <p class="coworking-box__text">
@@ -38,7 +38,7 @@
                         alt=""
                         class="coworking-box__img">
                 </div>
-                <div class="coworking-box">
+                <div class="coworking-box coworking-box--reverce">
                     <div class="coworking-box__content">
                         <p class="coworking-box__title">エントランス</p>
                         <p class="coworking-box__text">
@@ -55,7 +55,7 @@
                         alt=""
                         class="coworking-box__img">
                 </div>
-                <div class="coworking-box  coworking-box--reverce">
+                <div class="coworking-box">
                     <div class="coworking-box__content">
                         <p class="coworking-box__title">web会議ブース</p>
                         <p class="coworking-box__text">
@@ -72,7 +72,7 @@
                         alt=""
                         class="coworking-box__img">
                 </div>
-                <div class="coworking-box">
+                <div class="coworking-box coworking-box--reverce">
                     <div class="coworking-box__content">
                         <p class="coworking-box__title">フリースペース</p>
                         <p class="coworking-box__text">
@@ -94,6 +94,10 @@
                 <h3 class="amenity__title">LIST OF AMENITIES</h3>
                 <h4 class="amenity__subtitle">設備・アメニティ一覧</h4>
                 <div class="amenity-box">
+                <div class="amenity-frame">
+                        <p class="amenity-frame__text">経営哲学から実務的なスキルアップまで、ここでしか学べないセミナーや一風変わったイベントを開催。ときには会員だけでなく、一般の方も参加可能な企画もお届けいたします。</p>
+                        <p class="amenity-frame__text">経営哲学から実務的なスキルアップまで、ここでしか学べないセミナーや一風変わったイベントを開催。ときには会員だけでなく、一般の方も参加可能な企画もお届けいたします。</p>
+                    </div>
                     <div class="amenity-content">
                         <p class="amenity-content__title">有料</p>
                         <div class="amenity-content__box">

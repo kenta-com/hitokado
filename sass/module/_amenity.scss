@@ -1,5 +1,7 @@
 .amenity {
-    @include section-space;
+    width: 80%;
+    max-width: 1180px;
+    margin: 174px auto 0 auto;
     &__title {
         @include section-title;
         text-align: center;
@@ -7,6 +9,18 @@
     &__subtitle {
         @include section-subtitle;
         text-align: center;
+    }
+}
+.amenity-frame{
+    display: flex;
+    justify-content: space-between;
+    &__text{
+        line-height: 2;
+        width: calc(50% - 46px);
+        margin-right: 46px;
+        &:nth-child(2){
+            margin: 0;
+        }
     }
 }
 .amenity-box {
@@ -17,7 +31,6 @@
     }
     margin: 50px auto 0;
     background-color: $back-color;
-    width: 80%;
 }
 .amenity-content {
     &:nth-of-type(2) {
@@ -36,7 +49,7 @@
         text-align: center;
         width: 20%;
         margin: 20px 0;
-        font-size: 20px;
+        font-size: 24px;
         @include mq(tab) {
             width: 33.3333%;
         }

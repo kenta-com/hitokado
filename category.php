@@ -2,21 +2,17 @@
         <main class="main">
             <div class="news-galary">
                 <h3 class="news-galary__title">
-                    NEWS & BLOG
+                  <?php               // 投稿データのカテゴリーを取得
+              $cat = get_the_category();
+              $slug = $cat[0]->slug;
+              $cat_name = $cat[0]->name;
+              $link = get_category_link($cat[0]->cat_ID);
+              ?>
+                  NEW & BLOG
                 </h3>
-                <h4 class="news-galary__subtitle">お知らせ</h4>
+                <h4 class="news-galary__subtitle"><?php echo $slug; ?></h4>
                 <div class="news-galary-container">
-                <?php
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-$news_query = new WP_Query(
-  array(
-    'post_status' => 'publish',
-    'posts_per_page' => 6,
-    'paged' => $paged,
-  )
-);
-?>
-<?php if ($news_query->have_posts()) : while ($news_query->have_posts()) : $news_query->the_post(); ?>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 <a class="news-galary-box" href="<?php the_permalink(); ?>">
 <?php if(has_post_thumbnail()): ?>
     <?php the_post_thumbnail(null, array('class' => 'news-galary-box__img')); ?>
@@ -31,21 +27,16 @@ $news_query = new WP_Query(
                                       $cat_name = $category[0]->cat_name;
                                       $link = get_category_link($category[0]->cat_ID);
                                     ?>
-                            <object data="" type=""><a href="<?php echo $link;?>" class="news-galary-info__cat"><?php echo $cat_name; ?></a></object>
+                            <p  class="news-galary-info__cat"><?php echo $cat_name; ?></p>
                         </div>
                     </a>
-                    <?php endwhile;
+                    <?php endwhile;?>
+                  </div>
+                      <!-- /* 以下、ページャーの表示 */ -->
+  <?  if ( function_exists( 'pagination' ) ) :
+      pagination( $wp_query->max_num_pages, get_query_var( 'paged' ) );
+  endif;
                           endif;?>
-                          </div>
-                          <!-- /* ページャーの表示 */ -->
-<?if ( function_exists( 'pagination' ) ) :
-  pagination( $news_query->max_num_pages, $paged );  //$wp_query ではなく $the_query ないことに注意！
-endif;
-                    ?>
-<?php
-// サブクエリをリセット
-wp_reset_postdata();
-?>
-            </div>
+
         </main>
 <?php get_footer();?>
