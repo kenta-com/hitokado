@@ -29,7 +29,6 @@
 .about-concept-box {
     margin-top: 40px;
     position: relative;
-    height: 806px;
     display: flex;
     align-items: center;
     &__text {
@@ -39,6 +38,10 @@
         //80% : 1180px = 60 : X
         // X = 885px
         width: 60%;
+        @include mq(tab){
+            width: 80%;
+            left: 0;
+        }
         max-width: 885px;
         position: relative;
         left: -10%;
@@ -57,5 +60,8 @@
         object-fit: cover;
         width: 50%;
         height: 706px;
+        @include mq(tab){
+            height: 100%;
+        }
     }
 }

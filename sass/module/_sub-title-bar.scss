@@ -4,8 +4,10 @@
     left: 0;
     position: fixed;
     width: 100px;
-    margin-top: 10%;
-    height: 90%;
+    @include mq(tab){
+        width: 10%;
+    }
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

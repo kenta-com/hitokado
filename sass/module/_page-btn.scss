@@ -1,4 +1,4 @@
-.btn{
+.page-btn{
   margin: 120px auto 0 auto;
   display: flex;
   justify-content: space-between;
@@ -8,4 +8,14 @@
   letter-spacing: 3.1px;
   width: 60%;
   max-width: calc(1180px *0.8);
+  @include mq(tab){
+    flex-direction: column;
+    align-items:center;
+  }
+  &__link{
+    margin-top: 30px;
+    &:nth-of-type(0){
+      margin: 0;
+    }
+  }
 }

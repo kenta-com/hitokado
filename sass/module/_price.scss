@@ -13,10 +13,7 @@
     }
 }
 .price-box {
-    margin: 50px 0 0 0;
-    @include mq(tab) {
-        width: 80%;
-    }
+    margin: 50px 0 0;
     &__title {
         font-weight: 900;
         font-size: 24px;
@@ -37,25 +34,25 @@
     line-height: 2;
 }
 .price-box2 {
-    margin: 72px 0 0 0;
+    margin: 72px 0 0;
     justify-content: space-between;
     align-items: center;
     display: flex;
     @include mq(tab) {
-        width: 80%;
         flex-direction: column;
     }
     &__btn {
-        width: 200px;
-        img {
-            transition: 0.5s;
-            &:hover {
-                @include btn-scale;
-            }
+        @include view-btn(blak);
+        @include mq(tab){
+            margin-top: 50px;
             width: 100%;
         }
-        &:nth-child(2) {
-            margin-top: 20px;
+    }
+    &__price {
+        font-size: 36px;
+        font-weight: bold;
+        span {
+            font-size: 16px;
         }
     }
 }

@@ -28,11 +28,10 @@
         }
     }
     &__content {
-        box-sizing: border-box;
-        padding-left: 60px;
+        margin-left: 60px;
         width: 35%;
         @include mq(tab) {
-            margin-top: 50px;
+            margin: 50px 0 0 0 ;
             width: 100%;
         }
     }
@@ -40,15 +39,8 @@
         line-height: 2;
     }
     &__btn {
-        width: 200px;
-        margin-top: 53px;
-        img {
-            transition: 0.5s;
-            &:hover {
-                @include btn-scale;
-            }
-            width: 100%;
-        }
+        margin-top: 50px;
+       @include view-btn(blak);
     }
     &__title {
         font-weight: 900;

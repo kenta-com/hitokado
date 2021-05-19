@@ -9,18 +9,10 @@
     @include section-subtitle;
   }
   &__btn{
-    position: relative;
+    margin-top: 50px;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 50px;
-    display: block;
-    img{
-      transition:.5s;
-      width: 200px;
-      &:hover{
-        @include btn-scale;
-      }
-    }
+  @include view-btn(whit);
   }
   &__back{
     background-image: url(../img/faq-back.png) ;

@@ -16,8 +16,14 @@
     }
 }
 .coworking-box {
+    @include mq(tab){
+        flex-direction: column;
+    }
     @include container;
     &--reverce {
+        @include mq(tab){
+            flex-direction: column;
+        }
         flex-direction: row-reverse;
     }
     margin-top: 75px;
@@ -29,6 +35,9 @@
     align-items: center;
     &__content {
         width: 35%;
+        @include mq(tab){
+            width: 100%;
+        }
     }
     &__title {
         font-size: 26px;
@@ -48,5 +57,9 @@
     &__img {
         width: 60%;
         object-fit: cover;
+        @include mq(tab){
+            margin-top: 50px;
+            width: 100%;
+        }
     }
 }

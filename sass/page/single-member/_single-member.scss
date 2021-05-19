@@ -36,8 +36,9 @@
         font-weight: bold;
     }
     &__subname {
-        margin-top: 10px;
+        margin-top: 24px;
         @include nova;
+        line-height: 2;
     }
     &__text {
         margin-top: 36px;

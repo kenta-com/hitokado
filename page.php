@@ -22,7 +22,7 @@ $news_query = new WP_Query(
 <img src="<?php echo get_template_directory_uri(); ?>/img/no-img.png" alt="" class="member-about__img" />
 <?php endif; ?>
                         <p class="member-about__name"><?php the_title();?></p>
-                        <p class="member-about__caption"><?php the_excerpt()?></p>
+                        <p class="member-about__caption"><?php echo mb_substr(get_the_excerpt(), 0, 20); ?></p>
                     </a>
   <?php endwhile; ?>
 <?php endif; ?>

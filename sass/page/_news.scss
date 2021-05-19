@@ -12,16 +12,10 @@
     }
     &__btn {
         margin-top: 150px;
-        display: block;
-        width: 100%;
-        text-align: center;
-        img {
-            width: 200px;
-            transition: 0.5s;
-            &:hover {
-                @include btn-scale;
-            }
-        }
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+       @include view-btn(blak);
     }
 }
 .news-box {

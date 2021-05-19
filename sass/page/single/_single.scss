@@ -1,8 +1,11 @@
 .single-news {
-    margin: $title-top auto 0 auto;
+    margin: $title-top auto 0;
     &__title {
         text-align: center;
         @include section-title;
+        @include mq(tab){
+            font-size: 31px;
+        }
     }
     &__cat {
         letter-spacing: 1.6px;
@@ -12,7 +15,7 @@
         color: #8E8E8E;
         text-align: center;
         @include nova;
-        &:before{
+        &:before {
             content: '';
             position: absolute;
             bottom: -2px;
@@ -21,16 +24,26 @@
         }
     }
     &__img {
-        width:calc(100% - 200px);
+        width: calc(100% - 200px);
+        @include mq(tab){
+            width: 80%;
+        }
         object-fit: cover;
         display: block;
         margin: 55px auto 0;
         height: 470px;
     }
+    &__subtitle {
+        width: calc(80% *0.65);
+        max-width: 1180px;
+        margin: 48px auto 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
     &__content {
         width: calc(80% *0.65);
         max-width: 1180px;
         line-height: 4;
-        margin: 48px auto 0 auto;
+        margin: 48px auto 0;
     }
 }

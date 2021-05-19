@@ -17,7 +17,6 @@ the_post();
 <div class="single-member__content">
     <p class="single-member__name"><?php the_title();?></p>
     <p class="single-member__subname"><?php the_excerpt();?></p>
-    <p class="single-member__text"><?php the_content();?></p>
 </div>
 
                 </div>

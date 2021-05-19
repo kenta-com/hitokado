@@ -1,0 +1,68 @@
+$initBtn: 'normal';
+@mixin view-btn ($type:$initBtn) {
+    transition: all 0.2s;
+    &:hover {
+        transition: all 0.2s;
+    }
+    z-index: 0;
+    position: relative;
+    text-align: center;
+    letter-spacing: 2.2px;
+    @include nova;
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    height: 56px;
+    @include mq(tab){
+        width: 100%;
+    }
+
+    //ボタンのスタイルホワイト
+    @if($type == 'whit') {
+        //スタイル
+        border: 0;
+        color: black;
+        background: linear-gradient(135deg, transparent 17.3px, #ffffff 0) top left;
+        &:hover {
+            color: white;
+            background: linear-gradient(135deg, transparent 17.3px, #000000 0) top left;
+        }
+        &:before {
+            display: none;
+        }
+        &:after {
+            display: none;
+        }
+    }
+    //ボタンのスタイルブラック
+    @else if ($type == 'blak') {
+        color: #fff;
+        background-color: black;
+        border: 2px solid black;
+        &:hover {
+            background-color: #fff;
+            color: black;
+        }
+        &:before {
+            height: 0;
+            display: block;
+            position: absolute;
+            left: -3px;
+            content: "";
+            border-top: solid 28px #fff;
+            border-right: solid 28px transparent;
+            top: -3px;
+            z-index: 2;
+        }
+        &:after {
+            height: 0;
+            display: block;
+            position: absolute;
+            left: -2px;
+            content: "";
+            border-top: solid 28px black;
+            border-right: solid 28px transparent;
+            top: -2px;
+        }
+    }
+}

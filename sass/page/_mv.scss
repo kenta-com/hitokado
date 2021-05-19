@@ -3,6 +3,9 @@
     //headerの高さ
     margin: 0 auto;
     width: calc(100% - 200px);
+    @include mq(tab){
+        width: 80%;
+    }
     top: 100px;
     height: 90vh;
     @include mq(sp) {

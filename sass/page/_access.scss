@@ -9,16 +9,16 @@
     @include section-subtitle;
     margin-bottom: 50px;
   }
-}
 iframe{
 position: relative;
 left: 50%;
 height: 500px;
 transform: translateX(-50%);
 width: 50%;
-@include mq(sp){
+@include mq(tab){
   height: 300px;
   width: 80%;
+}
 }
 }
 .access-table{

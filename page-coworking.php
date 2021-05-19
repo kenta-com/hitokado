@@ -139,18 +139,18 @@
                 </div>
             </section>
             <section class="price">
-                <h3 class="price__title">PRICE</h3>
-                <h4 class="price__subtitle">料金表</h4>
-                <div class="price-box">
-                    <h5 class="price-box__title">MONTHLY SUBSCRIPTION</h5>
-                    <h6 class="price-box__subtitle">月額会員制</h6>
-                    <p class="price-content">コワーキングスペースhitokadoは、完全会員制です。ドロップイン（一時利用）は現時点では受け付けておりません。会員の方はスマートロックでの入退室となり、いつでも自由にご活用いただけます。また、業務効率やSNS活用のコンサルタントなどの専門家チームへの相談も特典のひとつです。</p>
-                </div>
+        <h3 class="price__title">PRICE</h3>
+        <h4 class="price__subtitle">料金表</h4>
+        <div class="price-box">
+            <h5 class="price-box__title">MONTHLY SUBSCRIPTION</h5>
+            <h6 class="price-box__subtitle">月額会員制</h6>
+            <p class="price-content">コワーキングスペースhitokadoは、完全会員制です。ドロップイン（一時利用）は現時点では受け付けておりません。会員の方はスマートロックでの入退室となり、いつでも自由にご活用いただけます。また、業務効率やSNS活用のコンサルタントなどの専門家チームへの相談も特典のひとつです。</p>
+        </div>
 
-                <div class="price-box2">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/20,000yen(税込).png" alt="" class="price-box2__btn">
-                    <button class="price-box2__btn"><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/contact.png" alt=""></a></button>
-                </div>
-            </section>
+        <div class="price-box2">
+                <div class="price-box2__price">20,000 <span>yen(税込)</span></div>
+            <button class="price-box2__btn"><a href="">CONTACT</a></button>
+        </div>
+    </section>
         </main>
 <?php get_footer();?>

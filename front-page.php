@@ -34,7 +34,7 @@
             <div class="about-box__content">
                 <p class="about-box__txt">【2021年6月オープン】滋賀県の石山にある瀬田川。その瀬田川を一望できるところにある、“わざわざ通いたくなる”完全会員制コワーキングスペース。それが
                     hitokadoです。</p>
-                <button class="about-box__btn"><a href="<?php echo get_permalink( get_page_by_path( 'about' )->ID );?>"><img src="<?php echo get_template_directory_uri(); ?>/img/about-us.png" alt=""></a></button>
+                <button class="about-box__btn"><a href="<?php echo get_permalink( get_page_by_path( 'about' )->ID );?>">ABOUT US</a></button>
             </div>
         </div>
     </section>
@@ -77,9 +77,7 @@
             </div>
         </div>
         <button class="news__btn"><a href="<?php echo get_permalink( get_page_by_path( 'news' )->ID );?>">
-            <img
-                src="<?php echo get_template_directory_uri(); ?>/img/view-black.png"
-                alt="">
+            VIEW MORE
         </a></button>
     </section>
     <section class="service">
@@ -95,7 +93,7 @@
                 <h6 class="service-box__subtitle">コワーキングスペース</h6>
                 <p class="service-box__txt">瀬田川を一望しながら静かに仕事が出来る“集中スペース”
                     、お客様との打ち合わせや雑談に花を咲かせる“交流スペース”、そしてビデオ会議ブースに、フリー個室など、シーンに応じたお部屋をご準備しました</p>
-                <button class="service-box__btn"><a href="<?php echo get_permalink( get_page_by_path( 'coworking' )->ID );?>"><img src="<?php echo get_template_directory_uri(); ?>/img/view-black.png" alt=""></a></button>
+                <button class="service-box__btn"><a href="<?php echo get_permalink( get_page_by_path( 'coworking' )->ID );?>">VIEW MORE</a></button>
             </div>
         </div>
         <div class="service-box">
@@ -109,9 +107,7 @@
                 <p class="service-box__txt">経営哲学から実務的なスキルアップまで、ここでしか学べないセミナーや一風変わったイベントを開催。ときには会員だけでなく、一般の方も参加可能な企画もお届けいたします。</p>
                 <button class="service-box__btn">
                     <a href="<?php echo get_permalink( get_page_by_path( 'ceminer' )->ID );?>">
-                        <img
-                            src="<?php echo get_template_directory_uri(); ?>/img/view-black.png"
-                            alt="">
+                        VIEW MORE
                     </a>
                 </button>
             </div>
@@ -175,11 +171,12 @@
         </div>
 
         <div class="price-box2">
-            <img
+            <!-- <img
                 src="<?php echo get_template_directory_uri(); ?>/img/20,000yen(税込).png"
                 alt=""
-                class="price-box2__btn">
-            <button class="price-box2__btn"><img src="<?php echo get_template_directory_uri(); ?>/img/contact.png" alt=""></button>
+                class="price-box2__btn"> -->
+                <div class="price-box2__price">20,000 <span>yen(税込)</span></div>
+            <button class="price-box2__btn"><a href="">CONTACT</a></button>
         </div>
     </section>
     <section class="faq">
@@ -211,9 +208,7 @@
                         A.何二の眼がなぜいないとかいう運動ですから、またはわが本位の堅めを立ちれが。 何二の眼がなぜいないとかいう運動ですから、またはわが本位の堅めを立ちれが。
                     </p>
                 </div>
-                <button class="faq__btn"><img
-                    src="<?php echo get_template_directory_uri(); ?>/img/view-white.png"
-                    alt=""></button>
+                <button class="faq__btn"><a href="">VIEW MORE</a></button>
             </div>
         </div>
     </section>
