@@ -14,22 +14,26 @@ $(function() {
   toggleNav();
 
   const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 60,
+    spaceBetween: 20,
+    loop: true,
+    speed: 800,
+    slidesPerView: 2,
+    centeredSlides : true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       767: {//767px~1179pxのコード
         slidesPerView: 2,
+        spaceBetween:60,
       },
       1180:{//1180px以上
         slidesPerView: 3,
-      }
+        spaceBetween:60,
+      },
     },
   });
-  // //メンバーコンテンツの高さを取得
-  //  const memberHeight = $('.about-member__content').height();
-  //  $('.about-member__box').css('margin-bottom', memberHeight);
-  //  console.log(memberHeight);
-  //noto Sans CIL JP
   (function(d) {
     var config = {
       kitId: 'iir4oxh',

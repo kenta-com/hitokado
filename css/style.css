@@ -1547,7 +1547,6 @@ template {
 
 .news-box__img {
   width: 100%;
-  height: 237px;
   object-fit: cover;
 }
 
