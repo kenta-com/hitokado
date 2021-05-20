@@ -507,7 +507,7 @@ template {
   max-width: calc(1180px *0.8);
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .page-btn {
     flex-direction: column;
     align-items: center;
@@ -571,7 +571,7 @@ template {
   width: 100%;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .header__img {
     top: 0;
     width: 80%;
@@ -584,7 +584,7 @@ template {
   align-items: center;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .header__nav {
     display: none;
   }
@@ -636,7 +636,7 @@ template {
   position: fixed;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .sub-header .nav_btn {
     right: 10%;
     transform: translateX(0%);
@@ -785,13 +785,13 @@ template {
   transform: rotate(180deg);
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .sub-title {
     width: 10%;
   }
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .sub-title {
     font-size: 20px;
   }
@@ -857,7 +857,7 @@ template {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .amenity-frame {
     flex-direction: column;
   }
@@ -869,7 +869,7 @@ template {
   margin-right: 46px;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .amenity-frame__text {
     width: 100%;
     margin: 0;
@@ -919,12 +919,6 @@ template {
   width: 20%;
   margin: 20px 0;
   font-size: 24px;
-}
-
-@media screen and (max-width: 1179px) {
-  .amenity-content__icon {
-    width: 33.3333%;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1026,7 +1020,7 @@ template {
   display: flex;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .price-box2 {
     flex-direction: column;
     align-items: flex-start;
@@ -1056,14 +1050,9 @@ template {
   transition: all 0.2s;
 }
 
-@media screen and (max-width: 1179px) {
-  .price-box2__btn {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .price-box2__btn {
+    width: 100%;
     font-size: 16px;
   }
 }
@@ -1168,7 +1157,7 @@ template {
   margin-top: calc(10vh + 80px);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1179px) {
   .about {
     width: 100%;
   }
@@ -1237,12 +1226,6 @@ template {
 @media screen and (max-width: 1179px) {
   .about-box__content {
     margin: 50px 0 0 0;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .about-box__content {
     width: 80%;
   }
 }
@@ -1275,14 +1258,9 @@ template {
   transition: all 0.2s;
 }
 
-@media screen and (max-width: 1179px) {
-  .about-box__btn {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .about-box__btn {
+    width: 100%;
     font-size: 16px;
   }
 }
@@ -1315,7 +1293,7 @@ template {
   top: -2px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1179px) {
   .about-box__btn {
     width: 60%;
   }
@@ -1499,14 +1477,9 @@ template {
   transition: all 0.2s;
 }
 
-@media screen and (max-width: 1179px) {
-  .news__btn {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .news__btn {
+    width: 100%;
     font-size: 16px;
   }
 }
@@ -1542,6 +1515,7 @@ template {
 @media screen and (max-width: 767px) {
   .news__btn {
     width: 60%;
+    margin-top: 110px;
   }
 }
 
@@ -1620,7 +1594,6 @@ template {
 @media screen and (min-width: 1180px) {
   .service-box--reverce {
     flex-direction: row-reverse;
-    margin-top: 50px;
   }
 }
 
@@ -1643,12 +1616,12 @@ template {
 
 .service-box__content {
   box-sizing: border-box;
-  margin: 0 0 0 60px;
+  margin: 0 60px 0 0;
   width: 35%;
 }
 
 .service-box__content--upper {
-  margin: 0 60px 0 0;
+  margin: 0 0 0 60px;
 }
 
 @media screen and (max-width: 1179px) {
@@ -1663,7 +1636,7 @@ template {
   margin-top: 50px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1179px) {
   .service-box__txt {
     display: none;
   }
@@ -1693,14 +1666,9 @@ template {
   transition: all 0.2s;
 }
 
-@media screen and (max-width: 1179px) {
-  .service-box__btn {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .service-box__btn {
+    width: 100%;
     font-size: 16px;
   }
 }
@@ -1821,14 +1789,9 @@ template {
   transition: all 0.2s;
 }
 
-@media screen and (max-width: 1179px) {
-  .faq__btn {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .faq__btn {
+    width: 100%;
     font-size: 16px;
   }
 }
@@ -1866,13 +1829,13 @@ template {
   width: 45%;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .faq-content {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .faq-content:nth-child(2) {
     margin-top: 40px;
   }
@@ -1937,13 +1900,6 @@ template {
   height: 500px;
   transform: translateX(-50%);
   width: 50%;
-}
-
-@media screen and (max-width: 1179px) {
-  .access iframe {
-    height: 300px;
-    width: 80%;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2045,7 +2001,7 @@ template {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .about-mv-content {
     flex-direction: column;
   }
@@ -2072,7 +2028,7 @@ template {
   line-height: 2;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .about-mv-content__text {
     width: 100%;
     margin-top: 20px;
@@ -2149,7 +2105,7 @@ template {
   left: -10%;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .about-concept-box__text {
     width: 80%;
     left: 0;
@@ -2172,7 +2128,7 @@ template {
   width: 50%;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .about-concept-box__img {
     height: 100%;
   }
@@ -2390,7 +2346,7 @@ template {
   }
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .single-news__title {
     font-size: 31px;
   }
@@ -2423,7 +2379,7 @@ template {
   height: 470px;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .single-news__img {
     width: 80%;
   }
@@ -2959,6 +2915,5 @@ template {
 
 .swiper-container {
   margin-top: 50px;
-  height: 343px;
 }
 /*# sourceMappingURL=style.css.map */

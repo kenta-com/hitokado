@@ -18,7 +18,6 @@
             @include mq(pc) {
                 flex-direction: row-reverse;
                 //sectionのサブタイトルからの距離
-                margin-top: 50px;
             }
         }
         margin-top: 110px;
@@ -37,10 +36,10 @@
         }
         &__content {
             &--upper {
-                margin: 0 60px 0 0;
+                margin: 0 0 0 60px;
             }
             box-sizing: border-box;
-            margin: 0 0 0 60px;
+            margin: 0 60px 0 0;
             width: 35%;
             @include mq(tab) {
                 margin: 50px 0 0 0;
@@ -48,7 +47,7 @@
             }
         }
         &__txt {
-            @include mq(sp){
+            @include mq(tab){
                 display:none;
             }
             line-height: 2;

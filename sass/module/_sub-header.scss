@@ -22,7 +22,7 @@
         height: 60px;
         z-index: 300;
         top: 18px;
-        @include mq(tab){
+        @include mq(sp){
             right: 10%;
             transform: translateX(0%);
         }

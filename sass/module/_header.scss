@@ -38,7 +38,7 @@ header{
     }
     &__img {
         width: 100%;
-        @include mq(tab) {
+        @include mq(sp) {
             top: 0;
             width: 80%;
         }
@@ -47,7 +47,7 @@ header{
         margin: 0 auto;
         display: flex;
         align-items: center;
-        @include mq(tab) {
+        @include mq(sp) {
             display: none;
         }
     }

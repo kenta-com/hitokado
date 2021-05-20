@@ -3,7 +3,7 @@
     &__title {
         text-align: center;
         @include section-title;
-        @include mq(tab){
+        @include mq(sp){
             font-size: 31px;
         }
     }
@@ -24,7 +24,7 @@
     }
     &__img {
         width: calc(100% - 200px);
-        @include mq(tab){
+        @include mq(sp){
             width: 80%;
         }
         object-fit: cover;

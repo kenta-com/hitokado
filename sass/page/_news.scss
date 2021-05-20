@@ -18,6 +18,7 @@
         @include view-btn(blak);
         @include mq(sp) {
             width: 60%;
+            margin-top:110px;
         }
     }
 }

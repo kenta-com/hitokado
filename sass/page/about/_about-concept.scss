@@ -38,7 +38,7 @@
         //80% : 1180px = 60 : X
         // X = 885px
         width: 60%;
-        @include mq(tab){
+        @include mq(sp){
             width: 80%;
             left: 0;
         }
@@ -59,7 +59,7 @@
         left: 50%;
         object-fit: cover;
         width: 50%;
-        @include mq(tab){
+        @include mq(sp){
             height: 100%;
         }
     }

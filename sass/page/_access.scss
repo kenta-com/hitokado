@@ -15,10 +15,6 @@ left: 50%;
 height: 500px;
 transform: translateX(-50%);
 width: 50%;
-@include mq(tab){
-  height: 300px;
-  width: 80%;
-}
 @include mq(sp){
   width: 100%;
 }

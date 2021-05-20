@@ -14,10 +14,8 @@ $initBtn: 'normal';
     font-weight: bold;
     width: 200px;
     height: 56px;
-    @include mq(tab){
-        width: 100%;
-    }
     @include mq(sp){
+        width: 100%;
         font-size: 16px;
     }
     //ボタンのスタイルホワイト
