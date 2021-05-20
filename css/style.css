@@ -1,10 +1,34 @@
 @charset "UTF-8";
+@media screen and (max-width: 767px) {
+  body {
+    min-width: 320px;
+  }
+  body,
+  html {
+    height: 100%;
+    min-height: 100%;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  body {
+    width: 100%;
+  }
+}
+
 body {
   overflow-x: hidden;
   font-family: noto-sans-cjk-jp, sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: justify;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 13px;
+    letter-spacing: 1.3px;
+  }
 }
 
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
@@ -463,23 +487,6 @@ template {
   display: none;
 }
 
-@media screen and (max-width: 767px) {
-  body {
-    min-width: 320px;
-  }
-  body,
-  html {
-    height: 100%;
-    min-height: 100%;
-  }
-}
-
-@media screen and (min-width: 1180px) {
-  body {
-    width: 100%;
-  }
-}
-
 @keyframes scale {
   to {
     transform: scale(1.1);
@@ -515,6 +522,18 @@ template {
   margin: 0;
 }
 
+@media screen and (max-width: 767px) {
+  header {
+    background-color: #fff;
+    height: 68px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+  }
+}
+
 .header {
   position: fixed;
   display: flex;
@@ -525,6 +544,13 @@ template {
   width: 80%;
   height: 100px;
   margin: 0 0 0 10%;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    height: 68px;
+    margin: 0 0 0 5%;
+  }
 }
 
 .header__logo {
@@ -583,10 +609,14 @@ template {
 
 /* humberger.simple1================================================ */
 .sub-header #sub-navi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transition: ease-out 0.4s;
   overflow-y: auto;
   padding-top: 40px;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   z-index: 200;
   top: 0;
@@ -599,11 +629,25 @@ template {
   width: 44px;
   height: 60px;
   z-index: 300;
-  top: 30px;
+  top: 18px;
   right: 50px;
   transform: translateX(50%);
   cursor: pointer;
   position: fixed;
+}
+
+@media screen and (max-width: 1179px) {
+  .sub-header .nav_btn {
+    right: 10%;
+    transform: translateX(0%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sub-header .nav_btn {
+    top: 4px;
+    right: 5%;
+  }
 }
 
 .sub-header .hamburger_line {
@@ -633,7 +677,7 @@ template {
 .sub-header .nav_bg {
   opacity: 0;
   transition: all 0.6s;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   z-index: 100;
   top: 0;
@@ -667,6 +711,12 @@ template {
 .nav_open .hamburger_line3 {
   transform: rotate(-45deg);
   top: 20px;
+}
+
+.nav-link {
+  padding: 20px 0;
+  margin: 30px 0;
+  display: block;
 }
 
 .footer {
@@ -766,6 +816,12 @@ template {
   margin: 174px auto 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+  .amenity {
+    width: 100%;
+  }
+}
+
 .amenity__title {
   font-family: gill-sans-nova, sans-serif;
   font-weight: 700;
@@ -777,11 +833,23 @@ template {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .amenity__title {
+    font-size: 26px;
+  }
+}
+
 .amenity__subtitle {
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .amenity__subtitle {
+    font-size: 11px;
+  }
 }
 
 .amenity-frame {
@@ -804,6 +872,7 @@ template {
 @media screen and (max-width: 1179px) {
   .amenity-frame__text {
     width: 100%;
+    margin: 0;
   }
 }
 
@@ -820,7 +889,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .amenity-box {
-    padding: 25px;
+    padding: 10%;
   }
 }
 
@@ -834,9 +903,9 @@ template {
   letter-spacing: 2px;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .amenity-content__title {
-    text-align: center;
+    font-size: 16px;
   }
 }
 
@@ -861,6 +930,7 @@ template {
 @media screen and (max-width: 767px) {
   .amenity-content__icon {
     width: 50%;
+    font-size: 20px;
   }
 }
 
@@ -869,11 +939,23 @@ template {
   font-size: 16px;
 }
 
+@media screen and (max-width: 767px) {
+  .amenity-content__des {
+    font-size: 11px;
+  }
+}
+
 .price {
   width: 65%;
   max-width: calc(1180px *0.65);
   margin: 0 auto;
   margin-top: 174px;
+}
+
+@media screen and (max-width: 767px) {
+  .price {
+    width: 80%;
+  }
 }
 
 .price__title {
@@ -887,11 +969,23 @@ template {
   line-height: 1.5;
 }
 
+@media screen and (max-width: 767px) {
+  .price__title {
+    font-size: 26px;
+  }
+}
+
 .price__subtitle {
   text-align: center;
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .price__subtitle {
+    font-size: 11px;
+  }
 }
 
 .price-box {
@@ -904,9 +998,9 @@ template {
   line-height: 2;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .price-box__title {
-    text-align: center;
+    font-size: 20px;
   }
 }
 
@@ -914,9 +1008,9 @@ template {
   font-size: 20px;
 }
 
-@media screen and (max-width: 1179px) {
+@media screen and (max-width: 767px) {
   .price-box__subtitle {
-    text-align: center;
+    font-size: 13px;
   }
 }
 
@@ -935,11 +1029,13 @@ template {
 @media screen and (max-width: 1179px) {
   .price-box2 {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 
 .price-box2__btn {
   transition: all 0.2s;
+  display: block;
   z-index: 0;
   position: relative;
   text-align: center;
@@ -963,6 +1059,12 @@ template {
 @media screen and (max-width: 1179px) {
   .price-box2__btn {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .price-box2__btn {
+    font-size: 16px;
   }
 }
 
@@ -1066,6 +1168,12 @@ template {
   margin-top: calc(10vh + 80px);
 }
 
+@media screen and (max-width: 767px) {
+  .about {
+    width: 100%;
+  }
+}
+
 .about__title {
   text-align: center;
   font-family: gill-sans-nova, sans-serif;
@@ -1077,12 +1185,24 @@ template {
   line-height: 1.5;
 }
 
+@media screen and (max-width: 767px) {
+  .about__title {
+    font-size: 26px;
+  }
+}
+
 .about__subtitle {
   text-align: center;
   font-weight: 100;
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .about__subtitle {
+    font-size: 11px;
+  }
 }
 
 .about-box {
@@ -1121,13 +1241,20 @@ template {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .about-box__content {
+    width: 80%;
+  }
+}
+
 .about-box__txt {
   line-height: 2;
 }
 
 .about-box__btn {
-  margin-top: 50px;
+  margin: 50px auto 0 auto;
   transition: all 0.2s;
+  display: block;
   z-index: 0;
   position: relative;
   text-align: center;
@@ -1151,6 +1278,12 @@ template {
 @media screen and (max-width: 1179px) {
   .about-box__btn {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-box__btn {
+    font-size: 16px;
   }
 }
 
@@ -1182,6 +1315,12 @@ template {
   top: -2px;
 }
 
+@media screen and (max-width: 767px) {
+  .about-box__btn {
+    width: 60%;
+  }
+}
+
 .about-box__title {
   font-weight: 900;
   line-height: 2;
@@ -1210,7 +1349,9 @@ template {
 
 @media screen and (max-width: 767px) {
   .mv {
-    height: 70vh;
+    width: 100%;
+    top: 68px;
+    height: 60vh;
   }
 }
 
@@ -1290,12 +1431,13 @@ template {
 
 @media screen and (max-width: 767px) {
   .mv-title__caption {
-    font-size: 16px;
+    font-size: 8px;
+    letter-spacing: 2.34px;
   }
 }
 
 .news {
-  margin: 174px auto 0 auto;
+  margin: 174px auto 0;
   max-width: 1180px;
   width: 80%;
 }
@@ -1311,11 +1453,23 @@ template {
   line-height: 1.5;
 }
 
+@media screen and (max-width: 767px) {
+  .news__title {
+    font-size: 26px;
+  }
+}
+
 .news__subtitle {
   text-align: center;
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .news__subtitle {
+    font-size: 11px;
+  }
 }
 
 .news__btn {
@@ -1324,6 +1478,7 @@ template {
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.2s;
+  display: block;
   z-index: 0;
   position: relative;
   text-align: center;
@@ -1347,6 +1502,12 @@ template {
 @media screen and (max-width: 1179px) {
   .news__btn {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news__btn {
+    font-size: 16px;
   }
 }
 
@@ -1376,6 +1537,12 @@ template {
   border-top: solid 28px black;
   border-right: solid 28px transparent;
   top: -2px;
+}
+
+@media screen and (max-width: 767px) {
+  .news__btn {
+    width: 60%;
+  }
 }
 
 .news-box__img {
@@ -1408,6 +1575,12 @@ template {
   width: 80%;
 }
 
+@media screen and (max-width: 767px) {
+  .service {
+    width: 90%;
+  }
+}
+
 .service__title {
   font-family: gill-sans-nova, sans-serif;
   font-weight: 700;
@@ -1419,11 +1592,23 @@ template {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .service__title {
+    font-size: 26px;
+  }
+}
+
 .service__subtitle {
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .service__subtitle {
+    font-size: 11px;
+  }
 }
 
 .service-box {
@@ -1479,9 +1664,16 @@ template {
   margin-top: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .service-box__txt {
+    display: none;
+  }
+}
+
 .service-box__btn {
   margin-top: 53px;
   transition: all 0.2s;
+  display: block;
   z-index: 0;
   position: relative;
   text-align: center;
@@ -1505,6 +1697,12 @@ template {
 @media screen and (max-width: 1179px) {
   .service-box__btn {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .service-box__btn {
+    font-size: 16px;
   }
 }
 
@@ -1536,14 +1734,32 @@ template {
   top: -2px;
 }
 
+@media screen and (max-width: 767px) {
+  .service-box__btn {
+    display: none;
+  }
+}
+
 .service-box__title {
   font-weight: 900;
   line-height: 2;
   font-size: 24px;
 }
 
+@media screen and (max-width: 767px) {
+  .service-box__title {
+    font-size: 19px;
+  }
+}
+
 .service-box__subtitle {
   font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .service-box__subtitle {
+    font-size: 13px;
+  }
 }
 
 .faq {
@@ -1561,6 +1777,12 @@ template {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .faq__title {
+    font-size: 26px;
+  }
+}
+
 .faq__subtitle {
   text-align: center;
   font-size: 14px;
@@ -1568,11 +1790,18 @@ template {
   font-weight: bold;
 }
 
+@media screen and (max-width: 767px) {
+  .faq__subtitle {
+    font-size: 11px;
+  }
+}
+
 .faq__btn {
   margin-top: 50px;
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.2s;
+  display: block;
   z-index: 0;
   position: relative;
   text-align: center;
@@ -1596,6 +1825,12 @@ template {
 @media screen and (max-width: 1179px) {
   .faq__btn {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .faq__btn {
+    font-size: 16px;
   }
 }
 
@@ -1640,16 +1875,16 @@ template {
 
 @media screen and (max-width: 1179px) {
   .faq-content:nth-child(2) {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
 
 .faq-content:nth-child(3) {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .faq-content:nth-child(4) {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .faq-content__question {
@@ -1677,12 +1912,24 @@ template {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .access__title {
+    font-size: 26px;
+  }
+}
+
 .access__subtitle {
   text-align: center;
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .access__subtitle {
+    font-size: 11px;
+  }
 }
 
 .access iframe {
@@ -1697,6 +1944,12 @@ template {
   .access iframe {
     height: 300px;
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .access iframe {
+    width: 100%;
   }
 }
 
@@ -1762,11 +2015,23 @@ template {
   line-height: 1.5;
 }
 
+@media screen and (max-width: 767px) {
+  .about-mv__title {
+    font-size: 26px;
+  }
+}
+
 .about-mv__subtitle {
   text-align: center;
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .about-mv__subtitle {
+    font-size: 11px;
+  }
 }
 
 .about-mv__img {
@@ -1830,11 +2095,23 @@ template {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .about-concept__title {
+    font-size: 26px;
+  }
+}
+
 .about-concept__subtitle {
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .about-concept__subtitle {
+    font-size: 11px;
+  }
 }
 
 .about-concept__caption {
@@ -1894,7 +2171,6 @@ template {
   left: 50%;
   object-fit: cover;
   width: 50%;
-  height: 706px;
 }
 
 @media screen and (max-width: 1179px) {
@@ -1918,11 +2194,23 @@ template {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .about-member__title {
+    font-size: 26px;
+  }
+}
+
 .about-member__subtitle {
   text-align: center;
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .about-member__subtitle {
+    font-size: 11px;
+  }
 }
 
 .about-member__box {
@@ -1991,11 +2279,23 @@ template {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .news-galary__title {
+    font-size: 26px;
+  }
+}
+
 .news-galary__subtitle {
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .news-galary__subtitle {
+    font-size: 11px;
+  }
 }
 
 .news-galary-container {
@@ -2085,6 +2385,12 @@ template {
   line-height: 1.5;
 }
 
+@media screen and (max-width: 767px) {
+  .single-news__title {
+    font-size: 26px;
+  }
+}
+
 @media screen and (max-width: 1179px) {
   .single-news__title {
     font-size: 31px;
@@ -2094,8 +2400,7 @@ template {
 .single-news__cat {
   letter-spacing: 1.6px;
   position: relative;
-  transform: translateX(-50%);
-  left: 50%;
+  display: block;
   color: #8E8E8E;
   text-align: center;
   font-family: gill-sans-nova, sans-serif;
@@ -2155,11 +2460,23 @@ template {
   line-height: 1.5;
 }
 
+@media screen and (max-width: 767px) {
+  .ceminer-mv__title {
+    font-size: 26px;
+  }
+}
+
 .ceminer-mv__subtitle {
   text-align: center;
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .ceminer-mv__subtitle {
+    font-size: 11px;
+  }
 }
 
 .ceminer-mv__img {
@@ -2191,11 +2508,23 @@ template {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .ceminer-about__title {
+    font-size: 26px;
+  }
+}
+
 .ceminer-about__subtitle {
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .ceminer-about__subtitle {
+    font-size: 11px;
+  }
 }
 
 .ceminer-about-container {
@@ -2287,11 +2616,23 @@ template {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .ceminer-member__title {
+    font-size: 26px;
+  }
+}
+
 .ceminer-member__subtitle {
   text-align: center;
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .ceminer-member__subtitle {
+    font-size: 11px;
+  }
 }
 
 .ceminer-member__box {
@@ -2358,11 +2699,23 @@ template {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .coworking__title {
+    font-size: 26px;
+  }
+}
+
 .coworking__subtitle {
   text-align: center;
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .coworking__subtitle {
+    font-size: 11px;
+  }
 }
 
 .coworking__caption {
@@ -2458,12 +2811,24 @@ template {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .member__title {
+    font-size: 26px;
+  }
+}
+
 .member__subtitle {
   text-align: center;
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
   margin-bottom: 130px;
+}
+
+@media screen and (max-width: 767px) {
+  .member__subtitle {
+    font-size: 11px;
+  }
 }
 
 .member-box {
@@ -2521,11 +2886,23 @@ template {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .single-member__title {
+    font-size: 26px;
+  }
+}
+
 .single-member__subtitle {
   text-align: center;
   font-size: 14px;
   letter-spacing: 1.6px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .single-member__subtitle {
+    font-size: 11px;
+  }
 }
 
 .single-member__box {

@@ -59,7 +59,6 @@
         left: 50%;
         object-fit: cover;
         width: 50%;
-        height: 706px;
         @include mq(tab){
             height: 100%;
         }

@@ -1,5 +1,5 @@
 .news {
-    margin: 174px auto 0 auto;
+    margin: 174px auto 0;
     max-width: 1180px;
     width: 80%;
     &__title {
@@ -15,7 +15,10 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-       @include view-btn(blak);
+        @include view-btn(blak);
+        @include mq(sp) {
+            width: 60%;
+        }
     }
 }
 .news-box {

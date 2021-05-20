@@ -2,6 +2,9 @@
     margin: 174px auto 0 auto;
     max-width: 1180px;
     width: 80%;
+    @include mq(sp){
+        width: 90%;
+    }
     &__title {
         @include section-title;
         text-align: center;
@@ -45,20 +48,32 @@
             }
         }
         &__txt {
+            @include mq(sp){
+                display:none;
+            }
             line-height: 2;
             margin-top: 50px;
         }
         &__btn {
             margin-top: 53px;
         @include view-btn(blak);
+        @include mq(sp){
+            display:none;
+        }
         }
         &__title {
             font-weight: 900;
             line-height: 2;
             font-size: 24px;
+            @include mq(sp){
+                font-size: 19px;
+            }
         }
         &__subtitle {
             font-size: 20px;
+            @include mq(sp){
+                font-size: 13px;
+            }
         }
     }
 }

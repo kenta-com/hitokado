@@ -1,4 +1,14 @@
-
+header{
+    @include mq(sp){
+        background-color: #fff;
+        height: 68px;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+    }
+}
 .header {
     position: fixed;
     display: flex;
@@ -8,6 +18,10 @@
     left: 0;
     width: 80%;
     height: 100px;
+    @include mq(sp){
+        height: 68px;
+    margin:0 0 0 5%;
+    }
     margin:0 0 0 10%;
     &__logo {
         display: flex;

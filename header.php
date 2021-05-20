@@ -41,19 +41,22 @@
                 <nav>
                     <ul class="nav-items" id="sub-navi">
                         <li class="nav-item">
-                            <a href="#courses" class="nav-link">HITOKADOについて</a>
+                            <a href="<?php echo get_permalink( get_page_by_path( 'about' )->ID );?>" class="nav-link">HITOKADOについて</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#why-stardy" class="nav-link">お知らせ</a>
+                            <a href="<?php echo get_permalink( get_page_by_path( 'news' )->ID );?>" class="nav-link">お知らせ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">サービス</a>
+                            <a href="<?php echo get_permalink( get_page_by_path( 'coworking' )->ID );?>" class="nav-link">サービス</a>
                         </li>
                         <li class="nav-item">
-                            <a href="contact.html" class="nav-link">メンバー紹介</a>
+                            <a href="<?php echo get_permalink( get_page_by_path( 'memberList' )->ID );?>" class="nav-link">メンバー紹介</a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link header-btn">料金</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link header-btn">アクセス</a>
                         </li>
                     </ul>
                 </nav>

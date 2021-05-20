@@ -4,6 +4,7 @@ $initBtn: 'normal';
     &:hover {
         transition: all 0.2s;
     }
+    display: block;
     z-index: 0;
     position: relative;
     text-align: center;
@@ -16,7 +17,9 @@ $initBtn: 'normal';
     @include mq(tab){
         width: 100%;
     }
-
+    @include mq(sp){
+        font-size: 16px;
+    }
     //ボタンのスタイルホワイト
     @if($type == 'whit') {
         //スタイル

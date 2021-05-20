@@ -171,10 +171,6 @@
         </div>
 
         <div class="price-box2">
-            <!-- <img
-                src="<?php echo get_template_directory_uri(); ?>/img/20,000yen(税込).png"
-                alt=""
-                class="price-box2__btn"> -->
                 <div class="price-box2__price">20,000 <span>yen(税込)</span></div>
             <button class="price-box2__btn"><a href="">CONTACT</a></button>
         </div>

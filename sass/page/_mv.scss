@@ -6,11 +6,13 @@
     @include mq(tab){
         width: 80%;
     }
+    @include mq(sp) {
+        width: 100%;
+        top:68px;
+        height: 60vh;
+    }
     top: 100px;
     height: 90vh;
-    @include mq(sp) {
-        height: 70vh;
-    }
     overflow: hidden;
     &__back-img {
         animation: show 18s infinite, scale 9s infinite;
@@ -74,7 +76,8 @@
         letter-spacing: 4.16px;
         font-size:20px;
         @include mq(sp) {
-            font-size: 16px;
+            font-size: 8px;
+            letter-spacing: 2.34px;
         }
     }
 }

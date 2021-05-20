@@ -1,12 +1,39 @@
 $layout-width-inner: 1180px;
 $breakpoints: (
-  "sp": "screen and (max-width: 767px)",
-  "tab": "screen and (max-width: #{$layout-width-inner - 1px})",
-  "pc": "screen and (min-width: #{$layout-width-inner})",
+    "sp": "screen and (max-width: 767px)",
+    "tab": "screen and (max-width: #{$layout-width-inner - 1px})",
+    "pc": "screen and (min-width: #{$layout-width-inner})",
 );
+
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+//SP
+@include mq(sp) {
+    body {
+        min-width: 320px;
+    }
+    body,
+    html {
+        height: 100%;
+        min-height: 100%;
+    }
+}
+//PC
+@include mq(pc) {
+    body {
+        width: 100%;
+    }
+}
 body{
   overflow-x: hidden;    font-family: noto-sans-cjk-jp, sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: justify;
+  @include mq(sp){
+    font-size: 13px;
+    letter-spacing: 1.3px;
+  }
 }

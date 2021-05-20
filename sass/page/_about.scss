@@ -1,5 +1,8 @@
 .about {
     @include container;
+    @include mq(sp){
+        width: 100%;
+    }
     //案メーションの関係で10vhプラスしなければいけない
     margin-top: calc(10vh + 80px);
     &__title {
@@ -34,13 +37,19 @@
             margin: 50px 0 0 0 ;
             width: 100%;
         }
+        @include mq(sp){
+            width: 80%;
+        }
     }
     &__txt {
         line-height: 2;
     }
     &__btn {
-        margin-top: 50px;
-       @include view-btn(blak);
+        margin: 50px auto 0 auto;
+        @include view-btn(blak);
+        @include mq(sp){
+            width: 60%;
+        }
     }
     &__title {
         font-weight: 900;

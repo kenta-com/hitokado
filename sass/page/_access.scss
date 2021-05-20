@@ -19,6 +19,9 @@ width: 50%;
   height: 300px;
   width: 80%;
 }
+@include mq(sp){
+  width: 100%;
+}
 }
 }
 .access-table{
