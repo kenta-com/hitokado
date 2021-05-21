@@ -563,7 +563,7 @@ template {
 
 .header__logo a {
   position: relative;
-  top: -8px;
+  top: -3px;
   display: block;
 }
 
@@ -596,15 +596,21 @@ template {
 }
 
 .header__item {
-  margin: 0 20px;
+  margin: 0 20px 0 19px;
   position: relative;
 }
 
 .header__item:before {
+  top: 50%;
+  font-size: 13px;
   content: '|';
-  transform: rotate(25deg);
+  transform: rotate(25deg) translateY(-50%);
   position: absolute;
   right: -20px;
+}
+
+.header__item:nth-of-type(6):before {
+  display: none;
 }
 
 /* humberger.simple1================================================ */
@@ -629,7 +635,7 @@ template {
   width: 44px;
   height: 60px;
   z-index: 300;
-  top: 18px;
+  top: 29px;
   right: 50px;
   transform: translateX(50%);
   cursor: pointer;
@@ -645,7 +651,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .sub-header .nav_btn {
-    top: 4px;
+    top: 9px;
     right: 5%;
   }
 }
@@ -758,13 +764,19 @@ template {
 }
 
 .contact__fav {
-  margin: 5px 0;
+  position: relative;
+  right: 1.2px;
+  font-size: 17px;
+  margin: 7px 0;
   transform: rotate(90deg);
 }
 
 .contact__slush {
+  position: relative;
+  top: 2px;
+  font-size: 13px;
   transform: rotate(30deg);
-  margin: 10px 0;
+  margin: 10px 0 9px 0;
 }
 
 .sub-title {
@@ -819,6 +831,7 @@ template {
 @media screen and (max-width: 767px) {
   .amenity {
     width: 100%;
+    margin: 124px auto 0 auto;
   }
 }
 
@@ -835,6 +848,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .amenity__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -848,6 +862,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .amenity__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -890,6 +905,7 @@ template {
 @media screen and (max-width: 767px) {
   .amenity-box {
     padding: 10%;
+    margin: 40px auto 0;
   }
 }
 
@@ -918,7 +934,7 @@ template {
   text-align: center;
   width: 20%;
   margin: 20px 0;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 @media screen and (max-width: 767px) {
@@ -942,13 +958,13 @@ template {
 .price {
   width: 65%;
   max-width: calc(1180px *0.65);
-  margin: 0 auto;
-  margin-top: 174px;
+  margin: 174px auto 0 auto;
 }
 
 @media screen and (max-width: 767px) {
   .price {
     width: 80%;
+    margin: 124px auto 0 auto;
   }
 }
 
@@ -965,6 +981,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .price__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -978,6 +995,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .price__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -986,7 +1004,16 @@ template {
   margin: 50px 0 0;
 }
 
+@media screen and (max-width: 767px) {
+  .price-box {
+    margin: 30px  0 0 0;
+  }
+}
+
 .price-box__title {
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-weight: 900;
   font-size: 24px;
   line-height: 2;
@@ -1013,11 +1040,23 @@ template {
   line-height: 2;
 }
 
+@media screen and (max-width: 767px) {
+  .price-content {
+    margin-top: 40px;
+  }
+}
+
 .price-box2 {
   margin: 72px 0 0;
   justify-content: space-between;
   align-items: center;
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .price-box2 {
+    margin-top: 40px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1052,6 +1091,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .price-box2__btn {
+    height: 43px;
     width: 100%;
     font-size: 16px;
   }
@@ -1068,8 +1108,8 @@ template {
   position: absolute;
   left: -3px;
   content: "";
-  border-top: solid 28px #fff;
-  border-right: solid 28px transparent;
+  border-top: solid 21px #fff;
+  border-right: solid 21px transparent;
   top: -3px;
   z-index: 2;
 }
@@ -1080,8 +1120,8 @@ template {
   position: absolute;
   left: -2px;
   content: "";
-  border-top: solid 28px black;
-  border-right: solid 28px transparent;
+  border-top: solid 21px black;
+  border-right: solid 21px transparent;
   top: -2px;
 }
 
@@ -1093,12 +1133,17 @@ template {
 }
 
 .price-box2__price {
-  font-size: 36px;
-  font-weight: bold;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 38px;
+  font-weight: 900;
 }
 
 .price-box2__price span {
   font-size: 16px;
+  position: relative;
+  left: -5px;
 }
 
 .pagination {
@@ -1163,6 +1208,12 @@ template {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .about {
+    margin-top: calc(10vh + 70px);
+  }
+}
+
 .about__title {
   text-align: center;
   font-family: gill-sans-nova, sans-serif;
@@ -1176,6 +1227,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .about__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -1190,6 +1242,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .about__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -1199,6 +1252,12 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .about-box {
+    margin-top: 40px;
+  }
 }
 
 @media screen and (max-width: 1179px) {
@@ -1227,6 +1286,12 @@ template {
   .about-box__content {
     margin: 50px 0 0 0;
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-box__content {
+    margin: 21px 0 0 0;
   }
 }
 
@@ -1260,6 +1325,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .about-box__btn {
+    height: 43px;
     width: 100%;
     font-size: 16px;
   }
@@ -1276,8 +1342,8 @@ template {
   position: absolute;
   left: -3px;
   content: "";
-  border-top: solid 28px #fff;
-  border-right: solid 28px transparent;
+  border-top: solid 21px #fff;
+  border-right: solid 21px transparent;
   top: -3px;
   z-index: 2;
 }
@@ -1288,14 +1354,20 @@ template {
   position: absolute;
   left: -2px;
   content: "";
-  border-top: solid 28px black;
-  border-right: solid 28px transparent;
+  border-top: solid 21px black;
+  border-right: solid 21px transparent;
   top: -2px;
 }
 
 @media screen and (max-width: 1179px) {
   .about-box__btn {
     width: 60%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-box__btn {
+    margin: 40px auto 0 auto;
   }
 }
 
@@ -1386,7 +1458,7 @@ template {
 
 .mv-title {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -1395,6 +1467,12 @@ template {
 .mv-title__logo-img {
   max-width: 372px;
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .mv-title__logo-img {
+    width: 80%;
+  }
 }
 
 .mv-title__caption {
@@ -1420,6 +1498,12 @@ template {
   width: 80%;
 }
 
+@media screen and (max-width: 767px) {
+  .news {
+    margin: 124px auto 0;
+  }
+}
+
 .news__title {
   text-align: center;
   font-family: gill-sans-nova, sans-serif;
@@ -1433,6 +1517,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .news__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -1446,6 +1531,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .news__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -1479,6 +1565,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .news__btn {
+    height: 43px;
     width: 100%;
     font-size: 16px;
   }
@@ -1495,8 +1582,8 @@ template {
   position: absolute;
   left: -3px;
   content: "";
-  border-top: solid 28px #fff;
-  border-right: solid 28px transparent;
+  border-top: solid 21px #fff;
+  border-right: solid 21px transparent;
   top: -3px;
   z-index: 2;
 }
@@ -1507,8 +1594,8 @@ template {
   position: absolute;
   left: -2px;
   content: "";
-  border-top: solid 28px black;
-  border-right: solid 28px transparent;
+  border-top: solid 21px black;
+  border-right: solid 21px transparent;
   top: -2px;
 }
 
@@ -1522,6 +1609,7 @@ template {
 .news-box__img {
   width: 100%;
   object-fit: cover;
+  height: 20vw;
 }
 
 .news-box__title {
@@ -1536,10 +1624,24 @@ template {
 
 .news-info__date {
   margin-right: 10px;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .news-info__cat {
-  border-bottom: 1px solid #8E8E8E;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  position: relative;
+}
+
+.news-info__cat:before {
+  content: '';
+  bottom: -0.5px;
+  width: 46px;
+  position: absolute;
+  border-bottom: 2px solid #8E8E8E;
 }
 
 .service {
@@ -1551,6 +1653,7 @@ template {
 @media screen and (max-width: 767px) {
   .service {
     width: 90%;
+    margin: 124px auto 0;
   }
 }
 
@@ -1567,6 +1670,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .service__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -1580,6 +1684,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .service__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -1594,6 +1699,12 @@ template {
 @media screen and (min-width: 1180px) {
   .service-box--reverce {
     flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .service-box {
+    margin-top: 53px;
   }
 }
 
@@ -1620,14 +1731,20 @@ template {
   width: 35%;
 }
 
+@media screen and (max-width: 1179px) {
+  .service-box__content {
+    margin: 20px 0 0 0;
+    width: 100%;
+  }
+}
+
 .service-box__content--upper {
   margin: 0 0 0 60px;
 }
 
 @media screen and (max-width: 1179px) {
-  .service-box__content {
-    margin: 50px 0 0 0;
-    width: 100%;
+  .service-box__content--upper {
+    margin: 0 0 0 0;
   }
 }
 
@@ -1668,6 +1785,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .service-box__btn {
+    height: 43px;
     width: 100%;
     font-size: 16px;
   }
@@ -1684,8 +1802,8 @@ template {
   position: absolute;
   left: -3px;
   content: "";
-  border-top: solid 28px #fff;
-  border-right: solid 28px transparent;
+  border-top: solid 21px #fff;
+  border-right: solid 21px transparent;
   top: -3px;
   z-index: 2;
 }
@@ -1696,8 +1814,8 @@ template {
   position: absolute;
   left: -2px;
   content: "";
-  border-top: solid 28px black;
-  border-right: solid 28px transparent;
+  border-top: solid 21px black;
+  border-right: solid 21px transparent;
   top: -2px;
 }
 
@@ -1708,6 +1826,9 @@ template {
 }
 
 .service-box__title {
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-weight: 900;
   line-height: 2;
   font-size: 24px;
@@ -1733,6 +1854,12 @@ template {
   margin-top: 174px;
 }
 
+@media screen and (max-width: 767px) {
+  .faq {
+    margin-top: 124px;
+  }
+}
+
 .faq__title {
   font-family: gill-sans-nova, sans-serif;
   font-weight: 700;
@@ -1746,6 +1873,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .faq__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -1759,6 +1887,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .faq__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -1780,9 +1909,9 @@ template {
   font-weight: bold;
   width: 200px;
   height: 56px;
-  border: 0;
   color: black;
-  background: linear-gradient(135deg, transparent 17.3px, #ffffff 0) top left;
+  background: linear-gradient(135deg, transparent 14.7px, #ffffff 0) top left;
+  z-index: 1;
 }
 
 .faq__btn:hover {
@@ -1791,6 +1920,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .faq__btn {
+    height: 43px;
     width: 100%;
     font-size: 16px;
   }
@@ -1798,7 +1928,7 @@ template {
 
 .faq__btn:hover {
   color: white;
-  background: linear-gradient(135deg, transparent 17.3px, #000000 0) top left;
+  background: linear-gradient(135deg, transparent 14.7px, #000000 0) top left;
 }
 
 .faq__btn:before {
@@ -1809,19 +1939,80 @@ template {
   display: none;
 }
 
+.faq__btn--back {
+  transition: all 0.2s;
+  display: block;
+  z-index: 0;
+  position: relative;
+  text-align: center;
+  letter-spacing: 2.2px;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: bold;
+  width: 200px;
+  height: 56px;
+  width: 203px;
+  height: 59px;
+  color: black;
+  background: linear-gradient(135deg, transparent 15px, #ffffff 0) top left;
+  left: calc(-50% - 0.5px);
+  top: -1.3px;
+  transform: translateX(50%);
+}
+
+.faq__btn--back:hover {
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 767px) {
+  .faq__btn--back {
+    height: 43px;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .faq__btn--back {
+    display: none;
+  }
+}
+
+.faq__btn--back:hover {
+  color: white;
+  background: linear-gradient(135deg, transparent 15px, #fff 0) top left;
+}
+
+.faq__btn--back:before {
+  display: none;
+}
+
+.faq__btn--back:after {
+  display: none;
+}
+
 .faq__back {
-  background-image: url(../img/faq-back.png);
+  background-image: url("../img/faq-back.png");
   background-size: cover;
 }
 
 .faq-box {
   width: 80%;
-  margin: 50px auto 0 auto;
+  margin: 50px auto 0;
   background-size: cover;
   justify-content: space-between;
   padding: 56px 0;
   display: flex;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .faq-box {
+    padding: 40px 0;
+    margin: 40px auto 0;
+  }
 }
 
 .faq-content {
@@ -1842,25 +2033,50 @@ template {
 }
 
 .faq-content:nth-child(3) {
-  margin-top: 40px;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .faq-content:nth-child(3) {
+    margin-top: 40px;
+  }
 }
 
 .faq-content:nth-child(4) {
-  margin-top: 40px;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .faq-content:nth-child(4) {
+    margin-top: 40px;
+  }
 }
 
 .faq-content__question {
+  letter-spacing: 2px;
   font-weight: 900;
   font-size: 20px;
 }
 
 .faq-content__answer {
   line-height: 2;
-  margin-top: 10px;
+  margin-top: 29px;
+}
+
+@media screen and (max-width: 767px) {
+  .faq-content__answer {
+    margin-top: 20px;
+  }
 }
 
 .access {
   margin-top: 174px;
+}
+
+@media screen and (max-width: 767px) {
+  .access {
+    margin-top: 124px;
+  }
 }
 
 .access__title {
@@ -1876,6 +2092,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .access__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -1890,7 +2107,14 @@ template {
 
 @media screen and (max-width: 767px) {
   .access__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .access__subtitle {
+    margin-bottom: 40px;
   }
 }
 
@@ -1928,16 +2152,40 @@ template {
   margin-top: 94px;
 }
 
+@media screen and (max-width: 767px) {
+  .access-table__row:nth-child(1) {
+    margin-top: 26px;
+  }
+}
+
 .access-table__row:nth-child(2) {
   margin-top: 64px;
+}
+
+@media screen and (max-width: 767px) {
+  .access-table__row:nth-child(2) {
+    margin-top: 25px;
+  }
 }
 
 .access-table__row:nth-child(3) {
   margin-top: 68px;
 }
 
+@media screen and (max-width: 767px) {
+  .access-table__row:nth-child(3) {
+    margin-top: 50px;
+  }
+}
+
 .access-table__row:nth-child(4) {
   margin-top: 47px;
+}
+
+@media screen and (max-width: 767px) {
+  .access-table__row:nth-child(4) {
+    margin-top: 19px;
+  }
 }
 
 .access-table__head {
@@ -1946,11 +2194,21 @@ template {
 }
 
 .access-table__head--bold {
+  font-size: 20px;
   font-weight: 900;
 }
 
 .access-table__data {
+  letter-spacing: 1.6px;
   line-height: 1.5;
+}
+
+.access-table__data:nth-of-type(1) {
+  margin-top: 10px;
+}
+
+.access-table__data:nth-of-type(2) {
+  margin-top: 10px;
 }
 
 .about-mv {
@@ -1972,6 +2230,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .about-mv__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -1985,6 +2244,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .about-mv__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -2052,6 +2312,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .about-concept__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -2065,6 +2326,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .about-concept__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -2151,6 +2413,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .about-member__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -2164,6 +2427,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .about-member__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -2236,6 +2500,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .news-galary__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -2249,6 +2514,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .news-galary__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -2342,6 +2608,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .single-news__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -2417,6 +2684,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .ceminer-mv__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -2430,6 +2698,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .ceminer-mv__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -2465,6 +2734,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .ceminer-about__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -2478,6 +2748,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .ceminer-about__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -2573,6 +2844,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .ceminer-member__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -2586,6 +2858,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .ceminer-member__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -2656,6 +2929,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .coworking__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -2669,6 +2943,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .coworking__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -2768,6 +3043,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .member__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -2782,6 +3058,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .member__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -2843,6 +3120,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .single-member__title {
+    letter-spacing: 2.6px;
     font-size: 26px;
   }
 }
@@ -2856,6 +3134,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .single-member__subtitle {
+    letter-spacing: 1.1px;
     font-size: 11px;
   }
 }
@@ -2915,6 +3194,5 @@ template {
 
 .swiper-container {
   margin-top: 50px;
-  height: 300px;
 }
 /*# sourceMappingURL=style.css.map */

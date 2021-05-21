@@ -20,11 +20,17 @@
         display: none;
     }
     &__fav {
-        margin: 5px 0;
+        position: relative;
+        right: 1.2px;
+        font-size: 17px;
+        margin: 7px 0;
         transform: rotate(90deg);
     }
     &__slush {
+        position: relative;
+        top: 2px;
+        font-size: 13px;
         transform: rotate(30deg);
-        margin: 10px 0;
+        margin: 10px 0 9px 0;
     }
 }

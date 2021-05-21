@@ -15,18 +15,18 @@ $initBtn: 'normal';
     width: 200px;
     height: 56px;
     @include mq(sp){
+        height: 43px;
         width: 100%;
         font-size: 16px;
     }
     //ボタンのスタイルホワイト
     @if($type == 'whit') {
         //スタイル
-        border: 0;
         color: black;
-        background: linear-gradient(135deg, transparent 17.3px, #ffffff 0) top left;
+        background: linear-gradient(135deg, transparent 14.7px, #ffffff 0) top left;
         &:hover {
             color: white;
-            background: linear-gradient(135deg, transparent 17.3px, #000000 0) top left;
+            background: linear-gradient(135deg, transparent 14.7px, #000000 0) top left;
         }
         &:before {
             display: none;
@@ -34,6 +34,26 @@ $initBtn: 'normal';
         &:after {
             display: none;
         }
+    }
+    @else if($type == 'back'){
+        //スタイル
+        width: 203px;
+        height: 59px;
+        @include mq(sp){
+            display: none;
+        }
+        color: black;
+        background: linear-gradient(135deg, transparent 15px, #ffffff 0) top left;
+        &:hover {
+      color: white;
+      background: linear-gradient(135deg, transparent 15px, #fff 0) top left;
+  }
+  &:before {
+      display: none;
+  }
+  &:after {
+      display: none;
+  }
     }
     //ボタンのスタイルブラック
     @else if ($type == 'blak') {
@@ -50,8 +70,8 @@ $initBtn: 'normal';
             position: absolute;
             left: -3px;
             content: "";
-            border-top: solid 28px #fff;
-            border-right: solid 28px transparent;
+            border-top: solid 21px #fff;
+            border-right: solid 21px transparent;
             top: -3px;
             z-index: 2;
         }
@@ -61,8 +81,8 @@ $initBtn: 'normal';
             position: absolute;
             left: -2px;
             content: "";
-            border-top: solid 28px black;
-            border-right: solid 28px transparent;
+            border-top: solid 21px black;
+            border-right: solid 21px transparent;
             top: -2px;
         }
     }

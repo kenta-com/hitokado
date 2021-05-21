@@ -53,10 +53,10 @@
                             <a href="<?php echo get_permalink( get_page_by_path( 'memberList' )->ID );?>" class="nav-link">メンバー紹介</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link header-btn">料金</a>
+                            <a href="" class="nav-link">料金</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link header-btn">アクセス</a>
+                            <a href="" class="nav-link">アクセス</a>
                         </li>
                     </ul>
                 </nav>

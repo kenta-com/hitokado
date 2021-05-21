@@ -4,6 +4,7 @@
     width: 80%;
     @include mq(sp){
         width: 90%;
+        margin: 124px auto 0;
     }
     &__title {
         @include section-title;
@@ -21,6 +22,9 @@
             }
         }
         margin-top: 110px;
+        @include mq(sp){
+            margin-top: 53px;
+        }
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -35,15 +39,18 @@
             }
         }
         &__content {
-            &--upper {
-                margin: 0 0 0 60px;
-            }
             box-sizing: border-box;
             margin: 0 60px 0 0;
             width: 35%;
             @include mq(tab) {
-                margin: 50px 0 0 0;
+                margin: 20px 0 0 0;
                 width: 100%;
+            }
+            &--upper {
+                margin: 0 0 0 60px;
+                @include mq(tab){
+                    margin: 0 0 0 0;
+                }
             }
         }
         &__txt {
@@ -61,6 +68,7 @@
         }
         }
         &__title {
+            @include nova;
             font-weight: 900;
             line-height: 2;
             font-size: 24px;

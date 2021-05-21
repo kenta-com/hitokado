@@ -1,5 +1,8 @@
 .news {
     margin: 174px auto 0;
+    @include mq(sp){
+        margin: 124px auto 0;
+    }
     max-width: 1180px;
     width: 80%;
     &__title {
@@ -26,6 +29,7 @@
     &__img {
         width: 100%;
         object-fit: cover;
+        height: 20vw;
     }
     &__title {
         margin-top: 30px;
@@ -37,8 +41,17 @@
     color: #8E8E8E;
     &__date {
         margin-right: 10px;
+        @include nova;
     }
     &__cat {
-        border-bottom: 1px solid #8E8E8E;
+        @include nova;
+        position: relative;
+        &:before{
+            content: '';
+            bottom: -0.5px;
+            width: 46px;
+            position: absolute;
+            border-bottom:2px solid #8E8E8E;
+        }
     }
 }

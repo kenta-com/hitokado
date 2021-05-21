@@ -2,6 +2,7 @@
     width: 80%;
     @include mq(sp){
         width: 100%;
+    margin: 124px auto 0 auto;
     }
     max-width: 1180px;
     margin: 174px auto 0 auto;
@@ -38,6 +39,7 @@
     padding: 50px;
     @include mq(sp) {
         padding: 10%;
+        margin: 40px auto 0;
     }
     margin: 50px auto 0;
     background-color: $back-color;
@@ -62,7 +64,7 @@
         text-align: center;
         width: 20%;
         margin: 20px 0;
-        font-size: 24px;
+        font-size: 32px;
         @include mq(sp) {
             width: 50%;
             font-size: 20px;

@@ -1,5 +1,8 @@
 .access{
-  @include section-space;
+  margin-top: 174px;
+  @include mq(sp){
+    margin-top: 124px;
+  }
   &__title{
     @include section-title;
     text-align: center;
@@ -8,6 +11,9 @@
     text-align: center;
     @include section-subtitle;
     margin-bottom: 50px;
+    @include mq(sp){
+      margin-bottom: 40px;
+    }
   }
 iframe{
 position: relative;
@@ -31,25 +37,45 @@ width: 50%;
     flex-direction: column;
     &:nth-child(1){
       margin-top: 94px;
+      @include mq(sp){
+        margin-top: 26px;
+      }
     }
     &:nth-child(2){
       margin-top: 64px;
+      @include mq(sp){
+        margin-top: 25px;
+      }
     }
     &:nth-child(3){
       margin-top: 68px;
+      @include mq(sp){
+        margin-top: 50px;
+      }
     }
     &:nth-child(4){
       margin-top:47px;
+      @include mq(sp){
+        margin-top: 19px;
+      }
     }
   }
   &__head{
     font-weight: 100;
     line-height: 2;
     &--bold{
+      font-size: 20px;
       font-weight: 900;
     }
   }
   &__data{
+    letter-spacing: 1.6px;
     line-height: 1.5;
+    &:nth-of-type(1){
+      margin-top: 10px;
+    }
+    &:nth-of-type(2){
+      margin-top: 10px;
+    }
   }
 }

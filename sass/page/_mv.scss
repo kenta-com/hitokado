@@ -59,13 +59,16 @@
 }
 .mv-title {
     position: absolute;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     &__logo-img {
         max-width: 372px;
         width: 100%;
+        @include mq(sp){
+            width: 80%;
+        }
     }
     &__caption {
         font-family: gill-sans-nova, sans-serif;

@@ -39,7 +39,7 @@
         </div>
     </section>
     <section class="news">
-        <h3 class="news__title">NEWS</h3>
+        <h3 class="news__title">NEWS & BLOG</h3>
         <h4 class="news__subtitle">お知らせ</h4>
         <!-- Swiper -->
         <div class="swiper-container">
@@ -114,7 +114,7 @@
         </div>
     </section>
     <section class="amenity">
-        <h3 class="amenity__title">LIST OF AMENITIES</h3>
+        <h3 class="amenity__title">LIST of AMENITIES</h3>
         <h4 class="amenity__subtitle">設備・アメニティ一覧</h4>
         <div class="amenity-box">
         <div class="amenity-frame">
@@ -171,7 +171,7 @@
         </div>
 
         <div class="price-box2">
-                <div class="price-box2__price">20,000 <span>yen(税込)</span></div>
+                <div class="price-box2__price">20,000 <span>yen (税込)</span></div>
             <button class="price-box2__btn"><a href="">CONTACT</a></button>
         </div>
     </section>
@@ -205,6 +205,7 @@
                     </p>
                 </div>
                 <button class="faq__btn"><a href="">VIEW MORE</a></button>
+                <button class="faq__btn faq__btn--back"><a href="">VIEW MORE</a></button>
             </div>
         </div>
     </section>

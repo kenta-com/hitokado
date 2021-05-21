@@ -32,7 +32,7 @@ header{
 
         a{
             position: relative;
-            top: -8px;
+            top: -3px;
             display: block;
         }
     }
@@ -56,13 +56,20 @@ header{
         justify-content: space-between;
     }
     &__item {
-        margin: 0 20px;
+        margin: 0 20px 0 19px;
         position: relative;
         &:before {
+            top:50%;
+            font-size: 13px;
             content: '|';
-            transform: rotate(25deg);
+            transform: rotate(25deg) translateY(-50%);
             position: absolute;
             right: -20px;
+        }
+        &:nth-of-type(6){
+            &:before{
+                display: none;
+            }
         }
     }
 }

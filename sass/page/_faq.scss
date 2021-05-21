@@ -1,56 +1,80 @@
-.faq{
-  @include section-space;
-  &__title{
-    @include section-title;
-    text-align: center;
-  }
-  &__subtitle{
-    text-align: center;
-    @include section-subtitle;
-  }
-  &__btn{
-    margin-top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-  @include view-btn(whit);
-  }
-  &__back{
-    background-image: url(../img/faq-back.png) ;
-    background-size: cover;
-  }
-}
-.faq-box{
-  width: 80%;
-  margin: 50px auto 0 auto;
-  background-size: cover;
-  justify-content: space-between;
-  padding: 56px 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-.faq-content{
-  color: #fff;
-  width: 45%;
-  @include mq(sp){
-    width: 100%;
-  }
-  &:nth-child(2){
+.faq {
+    margin-top: 174px;
     @include mq(sp){
-      margin-top: 40px;
+        margin-top: 124px;
     }
-  }
-  &:nth-child(3){
-    margin-top: 40px;
-  }
-  &:nth-child(4){
-    margin-top: 40px;
-  }
-  &__question{
-    font-weight: 900;
-    font-size: 20px;
-  }
-  &__answer{
-    line-height: 2;
-    margin-top: 10px;
-  }
+    &__title {
+        @include section-title;
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+        @include section-subtitle;
+    }
+    &__btn {
+        margin-top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include view-btn(whit);
+        z-index: 1;
+        &--back{
+          @include view-btn(back);
+          left:calc(-50% - 0.5px);
+          top: -1.3px;
+          transform: translateX(50%);
+        }
+    }
+    &__back {
+        background-image: url("../img/faq-back.png");
+        background-size: cover;
+    }
+}
+.faq-box {
+    width: 80%;
+    margin: 50px auto 0;
+    background-size: cover;
+    justify-content: space-between;
+    padding: 56px 0;
+    display: flex;
+    flex-wrap: wrap;
+    @include mq(sp){
+        padding: 40px 0;
+        margin: 40px auto 0;
+    }
+}
+.faq-content {
+    color: #fff;
+    width: 45%;
+    @include mq(sp) {
+        width: 100%;
+    }
+    &:nth-child(2) {
+        @include mq(sp) {
+            margin-top: 40px;
+        }
+    }
+    &:nth-child(3) {
+        margin-top: 60px;
+        @include mq(sp) {
+            margin-top: 40px;
+        }
+    }
+    &:nth-child(4) {
+        margin-top: 60px;
+        @include mq(sp) {
+            margin-top: 40px;
+        }
+    }
+    &__question {
+        letter-spacing: 2px;
+        font-weight: 900;
+        font-size: 20px;
+    }
+    &__answer {
+        line-height: 2;
+        margin-top: 29px;
+        @include mq(sp){
+            margin-top: 20px;
+        }
+    }
 }
