@@ -584,7 +584,7 @@ template {
   align-items: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1179px) {
   .header__nav {
     display: none;
   }
@@ -2915,5 +2915,6 @@ template {
 
 .swiper-container {
   margin-top: 50px;
+  height: 300px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -83,7 +83,7 @@
     <section class="service">
         <h3 class="service__title">SERVICE</h3>
         <h4 class="service__subtitle">サービス一覧</h4>
-        <div class="service-box service-box--reverce">
+        <div class="service-box">
             <img
                 src="<?php echo get_template_directory_uri(); ?>/img/jonathan-kemper-zSCHyhiRSeQ-unsplash.jpg"
                 alt=""
@@ -96,7 +96,7 @@
                 <button class="service-box__btn"><a href="<?php echo get_permalink( get_page_by_path( 'coworking' )->ID );?>">VIEW MORE</a></button>
             </div>
         </div>
-        <div class="service-box">
+        <div class="service-box service-box--reverce">
             <img
                 src="<?php echo get_template_directory_uri(); ?>/img/jonathan-kemper-zSCHyhiRSeQ-unsplash.jpg"
                 alt=""
