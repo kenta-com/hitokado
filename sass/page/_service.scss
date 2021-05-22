@@ -1,6 +1,6 @@
 .service {
     margin: 174px auto 0 auto;
-    max-width: 1180px;
+    max-width: 1366px;
     width: 80%;
     @include mq(sp){
         width: 90%;
@@ -16,10 +16,7 @@
     }
     &-box {
         &--reverce {
-            @include mq(pc) {
                 flex-direction: row-reverse;
-                //sectionのサブタイトルからの距離
-            }
         }
         margin-top: 110px;
         @include mq(sp){
@@ -33,7 +30,7 @@
         }
         &__img {
             object-fit: cover;
-            width: 65%;
+            width: 70%;
             max-height: 510px;
             height: 50vw;
             @include mq(tab) {
@@ -43,20 +40,23 @@
         &__content {
             box-sizing: border-box;
             margin: 0 60px 0 0;
-            width: 35%;
+            width: calc(30% - 60px);
             @include mq(tab) {
                 margin: 20px 0 0 0;
+                width: 100%;
+            }
+            @include mq(tab){
                 width: 100%;
             }
             &--upper {
                 margin: 0 0 0 60px;
                 @include mq(tab){
-                    margin: 0 0 0 0;
+                margin: 20px 0 0 0;
                 }
             }
         }
         &__txt {
-            @include mq(tab){
+            @include mq(sp){
                 display:none;
             }
             line-height: 2;
@@ -65,6 +65,9 @@
         &__btn {
             margin-top: 53px;
         @include view-btn(blak);
+        @include mq(tab){
+            width: 100%;
+        }
         @include mq(sp){
             display:none;
         }
@@ -73,13 +76,15 @@
             @include nova;
             font-weight: 900;
             line-height: 2;
+            letter-spacing: 2.3px;
             font-size: 24px;
             @include mq(sp){
                 font-size: 19px;
+                letter-spacing: 1.9px;
             }
         }
         &__subtitle {
-            font-size: 20px;
+            font-size: 18px;
             @include mq(sp){
                 font-size: 13px;
             }

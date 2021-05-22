@@ -22,16 +22,16 @@
         height: 60px;
         z-index: 300;
         top: 29px;
+        right: 10%;
         @include mq(sp){
-            right: 10%;
-            transform: translateX(0%);
+            top:34px;
         }
-        @include mq(sp){
-        top:9px;
-        right: 5%;
+        @include mq(tab){
+            right: 5%
         }
+        top: 50px;
         right: 50px;
-        transform: translateX(50%);
+        transform: translate(50%, -50%);
         cursor: pointer;
         position: fixed;
     }

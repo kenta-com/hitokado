@@ -17,24 +17,23 @@
         transform: translateX(-50%);
         @include view-btn(whit);
         z-index: 1;
-        &--back{
-          @include view-btn(back);
-          left:calc(-50% - 0.5px);
-          top: -1.3px;
-          transform: translateX(50%);
+        @include mq(sp){
+            width: 80%;
         }
     }
     &__back {
         background-image: url("../img/faq-back.png");
         background-size: cover;
+        padding: 56px 0;
+        margin-top: 50px;
     }
 }
 .faq-box {
-    width: 80%;
+    max-width: 1366px;
     margin: 50px auto 0;
+    width: 80%;
     background-size: cover;
     justify-content: space-between;
-    padding: 56px 0;
     display: flex;
     flex-wrap: wrap;
     @include mq(sp){
@@ -67,7 +66,7 @@
     }
     &__question {
         letter-spacing: 2px;
-        font-weight: 900;
+        font-weight: bold;
         font-size: 20px;
     }
     &__answer {

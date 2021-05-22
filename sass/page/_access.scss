@@ -19,6 +19,7 @@ iframe{
 position: relative;
 left: 50%;
 height: 500px;
+max-width: 747px;
 transform: translateX(-50%);
 width: 50%;
 @include mq(sp){
@@ -27,7 +28,8 @@ width: 50%;
 }
 }
 .access-table{
-  width: 42%;
+  width: 40%;
+  max-width: 574px;
   @include mq(sp){
     width: 80%;
   }

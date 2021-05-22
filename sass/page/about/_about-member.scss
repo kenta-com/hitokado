@@ -17,7 +17,9 @@
     &__img {
         object-fit: cover;
         height: 508px;
-        @include container(75%);
+        margin: 0 auto;
+        width: 80%;
+        max-width: 960px;
         display: block;
         z-index: -1;
         position: relative;
@@ -30,7 +32,7 @@
         position: relative;
         margin: 0 auto;
         width: 65%;
-        max-width: calc(1336px *0.65);
+        max-width:698px;
         transform: translateY(-30px);
     }
     &__name {

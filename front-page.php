@@ -122,7 +122,7 @@
                         <p class="amenity-frame__text">経営哲学から実務的なスキルアップまで、ここでしか学べないセミナーや一風変わったイベントを開催。ときには会員だけでなく、一般の方も参加可能な企画もお届けいたします。</p>
                     </div>
             <div class="amenity-content">
-                <p class="amenity-content__title">有料</p>
+                <p class="amenity-content__title">無料</p>
                 <div class="amenity-content__box">
                     <div class="amenity-content__icon">
                         <i class="fas fa-wifi amenity-content__fav"></i>
@@ -204,9 +204,8 @@
                         A.何二の眼がなぜいないとかいう運動ですから、またはわが本位の堅めを立ちれが。 何二の眼がなぜいないとかいう運動ですから、またはわが本位の堅めを立ちれが。
                     </p>
                 </div>
-                <button class="faq__btn"><a href="">VIEW MORE</a></button>
-                <button class="faq__btn faq__btn--back"><a href="">VIEW MORE</a></button>
             </div>
+            <button class="faq__btn"><a href="">VIEW MORE</a></button>
         </div>
     </section>
     <section class="access">

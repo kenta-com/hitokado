@@ -18,11 +18,14 @@ header{
     left: 0;
     width: 80%;
     height: 100px;
+    margin: 0 0 0 100px;
+    @media  screen and (max-width:1366px) {
+        margin: 0 0 0 10%;
+    }
     @include mq(sp){
         height: 68px;
     margin:0 0 0 5%;
     }
-    margin:0 0 0 10%;
     &__logo {
         display: flex;
         justify-content: center;

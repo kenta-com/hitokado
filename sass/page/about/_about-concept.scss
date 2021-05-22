@@ -1,5 +1,6 @@
 .about-concept {
-    margin-top: 95px;
+    max-width: 1336px;
+    margin: 95px auto 0;
     &__title {
         @include section-title;
         text-align: center;
@@ -9,7 +10,7 @@
         text-align: center;
     }
     &__caption {
-        max-width: 1180px;
+        max-width: 1366px;
         width: 80%;
         margin:58px auto 0 auto;
         font-family: ten-mincho, serif;
@@ -20,7 +21,7 @@
     }
     &__subcaption {
         width: 80%;
-        max-width: 1180px;
+        max-width: 1366px;
         margin:58px auto 0 auto;
         margin-top: 11px;
         font-size: 12px;

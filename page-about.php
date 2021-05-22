@@ -3,6 +3,7 @@
             <section class="about-mv">
                 <h4 class="about-mv__title">ABOUT HITOKADO</h4>
                 <h5 class="about-mv__subtitle">HITOKADOについて</h5>
+                <img src="<?php echo get_template_directory_uri();?>/img/back-main.png" alt="" class="about-mv__img">
                 <div class="about-mv-content">
                     <div class="about-mv-content__box">
                         <p class="about-mv-content__title">HITOKADOとは？</p>

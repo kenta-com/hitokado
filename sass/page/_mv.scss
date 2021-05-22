@@ -1,28 +1,25 @@
 .mv {
     position: relative;
+    top: 100px;
     //headerの高さ
     margin: 0 auto;
     width: calc(100% - 200px);
+    height: 66vw;
     @include mq(tab){
         width: 80%;
     }
     @include mq(sp) {
         width: 100%;
         top:68px;
-        height: 60vh;
+        height: 397px;
     }
-    top: 100px;
-    height: 90vh;
     overflow: hidden;
     &__back-img {
         animation: show 18s infinite, scale 9s infinite;
         /* 12秒のスライドショーを繰り返し */
         position: absolute;
-        width: 100%;
-        height: 90vh;
-        @include mq(sp) {
-            height: 70vh;
-        }
+        width:100%;
+        height: 100%;
         object-fit: cover;
         left: 0;
         top: 0;
@@ -76,7 +73,7 @@
         font-style: normal;
         margin-top: 20px;
         color: white;
-        letter-spacing: 4.16px;
+        letter-spacing: 4.1px;
         font-size:20px;
         @include mq(sp) {
             font-size: 8px;
