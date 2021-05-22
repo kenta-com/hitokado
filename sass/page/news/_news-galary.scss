@@ -64,7 +64,15 @@
         }
         &__cat {
             display: block;
-            border-bottom: 1px solid #8E8E8E;
+            @include nova;
+            position: relative;
+            &:before{
+                content: '';
+                bottom: -0.5px;
+                width:100%;
+                position: absolute;
+                border-bottom:2px solid #8E8E8E;
+            }
         }
     }
 }

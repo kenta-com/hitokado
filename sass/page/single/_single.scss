@@ -10,16 +10,17 @@
     &__cat {
         letter-spacing: 1.6px;
         position: relative;
-        display: block;
         color: #8E8E8E;
-        text-align: center;
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%);
         @include nova;
-        &:before {
+        &:before{
             content: '';
+            bottom: -0.5px;
+            width:100%;
             position: absolute;
-            bottom: -2px;
-            width: 51px;
-            border-bottom: 1px solid #8E8E8E;
+            border-bottom:2px solid #8E8E8E;
         }
     }
     &__img {

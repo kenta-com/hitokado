@@ -1,4 +1,5 @@
 $(function() {  
+  // ハンバーガーめにゅー
   function toggleNav() {
     var body = document.body;
     var hamburger = document.getElementById('sub-nav_btn');
@@ -13,6 +14,7 @@ $(function() {
   }
   toggleNav();
 
+//TOPページnewsリスト
   const swiper = new Swiper('.swiper-container', {
     spaceBetween: 20,
     loop: true,

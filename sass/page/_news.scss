@@ -44,12 +44,13 @@
         @include nova;
     }
     &__cat {
+        display: block;
         @include nova;
         position: relative;
         &:before{
             content: '';
             bottom: -0.5px;
-            width: 46px;
+            width:100%;
             position: absolute;
             border-bottom:2px solid #8E8E8E;
         }

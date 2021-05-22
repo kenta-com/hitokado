@@ -721,7 +721,7 @@ template {
 
 .nav-link {
   padding: 20px 0;
-  margin: 30px 0;
+  margin: 20px 0;
   display: block;
 }
 
@@ -1269,6 +1269,7 @@ template {
 .about-box__img {
   object-fit: cover;
   width: 65%;
+  max-height: 510px;
 }
 
 @media screen and (max-width: 1179px) {
@@ -1630,6 +1631,7 @@ template {
 }
 
 .news-info__cat {
+  display: block;
   font-family: gill-sans-nova, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -1639,7 +1641,7 @@ template {
 .news-info__cat:before {
   content: '';
   bottom: -0.5px;
-  width: 46px;
+  width: 100%;
   position: absolute;
   border-bottom: 2px solid #8E8E8E;
 }
@@ -1717,6 +1719,8 @@ template {
 .service-box__img {
   object-fit: cover;
   width: 65%;
+  max-height: 510px;
+  height: 50vw;
 }
 
 @media screen and (max-width: 1179px) {
@@ -2387,13 +2391,8 @@ template {
   position: absolute;
   left: 50%;
   object-fit: cover;
+  height: 100%;
   width: 50%;
-}
-
-@media screen and (max-width: 767px) {
-  .about-concept-box__img {
-    height: 100%;
-  }
 }
 
 .about-member {
@@ -2588,7 +2587,18 @@ template {
 
 .news-galary-info__cat {
   display: block;
-  border-bottom: 1px solid #8E8E8E;
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  position: relative;
+}
+
+.news-galary-info__cat:before {
+  content: '';
+  bottom: -0.5px;
+  width: 100%;
+  position: absolute;
+  border-bottom: 2px solid #8E8E8E;
 }
 
 .single-news {
@@ -2622,9 +2632,10 @@ template {
 .single-news__cat {
   letter-spacing: 1.6px;
   position: relative;
-  display: block;
   color: #8E8E8E;
-  text-align: center;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: gill-sans-nova, sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -2632,10 +2643,10 @@ template {
 
 .single-news__cat:before {
   content: '';
+  bottom: -0.5px;
+  width: 100%;
   position: absolute;
-  bottom: -2px;
-  width: 51px;
-  border-bottom: 1px solid #8E8E8E;
+  border-bottom: 2px solid #8E8E8E;
 }
 
 .single-news__img {
@@ -3091,6 +3102,13 @@ template {
   height: 178px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .member-about__img {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .member-about__name {
