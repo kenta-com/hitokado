@@ -642,7 +642,6 @@ template {
   height: 60px;
   z-index: 300;
   top: 29px;
-  right: 10%;
   top: 50px;
   right: 50px;
   transform: translate(50%, -50%);
@@ -650,15 +649,17 @@ template {
   position: fixed;
 }
 
-@media screen and (max-width: 767px) {
-  .sub-header .nav_btn {
-    top: 34px;
-  }
-}
-
 @media screen and (max-width: 1179px) {
   .sub-header .nav_btn {
     right: 5%;
+    transform: translate(50%, -50%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sub-header .nav_btn {
+    top: 34px;
+    transform: translate(0%, -50%);
   }
 }
 
@@ -2229,8 +2230,10 @@ template {
 }
 
 .about-mv__img {
+  height: 662px;
   display: block;
   width: 100%;
+  object-fit: cover;
   margin-top: 53px;
 }
 
@@ -2250,10 +2253,13 @@ template {
 .about-mv-content__title {
   font-size: 34px;
   letter-spacing: 1.7px;
-  font-family: gill-sans-nova, sans-serif;
-  font-weight: 500;
-  font-style: normal;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 767px) {
+  .about-mv-content__title {
+    width: 100%;
+  }
 }
 
 .about-mv-content__subtitle {
@@ -2264,14 +2270,15 @@ template {
 }
 
 .about-mv-content__text {
-  width: 45%;
+  margin: 0 0 0 70px;
+  width: 60%;
   line-height: 2;
 }
 
 @media screen and (max-width: 767px) {
   .about-mv-content__text {
     width: 100%;
-    margin-top: 20px;
+    margin: 20px  0 0 0;
   }
 }
 
@@ -2324,6 +2331,9 @@ template {
 }
 
 .about-concept__subcaption {
+  font-family: gill-sans-nova, sans-serif;
+  font-weight: 500;
+  font-style: normal;
   width: 80%;
   max-width: 1366px;
   margin: 58px auto 0 auto;
@@ -2358,7 +2368,7 @@ template {
 
 .about-concept-box__text span {
   display: block;
-  margin: 18px;
+  margin: 23px;
 }
 
 .about-concept-box__img {
@@ -2435,7 +2445,7 @@ template {
   padding: 56px;
   position: relative;
   margin: 0 auto;
-  width: 65%;
+  width: 60%;
   max-width: 698px;
   transform: translateY(-30px);
 }
@@ -2693,21 +2703,24 @@ template {
 }
 
 .ceminer-mv__img {
-  display: block;
   width: 80%;
-  max-width: 1366px;
+  display: block;
+  object-fit: cover;
+  max-width: 1180px;
+  max-height: 785px;
   margin: 53px auto 0;
 }
 
 .ceminer-mv__caption {
   margin: 72px auto 0;
-  width: calc(80% *0.65);
-  max-width: calc(1180px *0.65);
+  width: 60%;
+  max-width: 686px;
+  max-height: 298px;
   line-height: 2;
 }
 
 .ceminer-about {
-  margin-top: 163px;
+  margin-top: 134px;
 }
 
 .ceminer-about__title {
@@ -2862,12 +2875,11 @@ template {
 
 .ceminer-member__img {
   object-fit: cover;
-  height: 508px;
-  max-width: 1366px;
-  width: 85%;
-  margin: 0 auto;
+  width: 80%;
+  max-width: 960px;
   display: block;
   z-index: -1;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -2877,9 +2889,9 @@ template {
   box-sizing: border-box;
   padding: 56px;
   position: relative;
-  width: 65%;
+  width: 60%;
   margin: 0 auto;
-  max-width: calc(1336px *0.65);
+  max-width: 698px;
   transform: translateY(-30px);
 }
 
@@ -3004,6 +3016,7 @@ template {
 
 .coworking-box__img {
   width: 60%;
+  max-height: 487px;
   object-fit: cover;
 }
 
@@ -3053,6 +3066,8 @@ template {
 }
 
 .member-box {
+  max-width: 1366px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
@@ -3071,7 +3086,7 @@ template {
 
 @media screen and (max-width: 767px) {
   .member-about {
-    width: 50%;
+    width: 100%;
   }
 }
 
@@ -3080,13 +3095,6 @@ template {
   height: 178px;
   object-fit: cover;
   border-radius: 50%;
-}
-
-@media screen and (max-width: 767px) {
-  .member-about__img {
-    width: 120px;
-    height: 120px;
-  }
 }
 
 .member-about__name {
@@ -3141,12 +3149,12 @@ template {
 
 .single-member__img {
   object-fit: cover;
-  height: 508px;
-  max-width: 1366px;
-  width: 75%;
-  margin: 0 auto;
+  max-height: 508px;
+  width: 80%;
+  max-width: 960px;
   display: block;
   z-index: -1;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -3156,8 +3164,8 @@ template {
   box-sizing: border-box;
   padding: 56px;
   position: relative;
-  max-width: calc(1336px *0.65);
-  width: 65%;
+  max-width: 698px;
+  width: 60%;
   margin: 0 auto;
   transform: translateY(-30px);
 }
@@ -3182,8 +3190,8 @@ template {
 }
 
 .single-member__detail {
-  max-width: calc(1336px *0.65);
-  width: 65%;
+  width: 60%;
+  max-width: 698px;
   margin: 120px auto 0;
   line-height: 3;
 }

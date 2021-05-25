@@ -22,12 +22,13 @@
         height: 60px;
         z-index: 300;
         top: 29px;
-        right: 10%;
-        @include mq(sp){
-            top:34px;
+        @include mq(tab) {
+            right: 5%;
+            transform: translate(50%,-50%);
         }
-        @include mq(tab){
-            right: 5%
+        @include mq(sp) {
+            top: 34px;
+            transform: translate(0%,-50%);
         }
         top: 50px;
         right: 50px;
@@ -96,7 +97,7 @@
     transform: rotate(-45deg);
     top: 20px;
 }
-.nav-link{
+.nav-link {
     padding: 20px 0;
     margin: 20px 0;
     display: block;

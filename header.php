@@ -4,6 +4,11 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- icon -->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico">
         <title>hitokado</title>
         <?php wp_head();?>
     </head>
@@ -11,21 +16,32 @@
         <header>
             <div class="header">
                 <h1 class="header__logo">
-                    <a href="<?php echo home_url(); ?>"><img class="header__img" src="<?php echo get_template_directory_uri(); ?>/img/logo-black.png" alt="Hitokado"/></a>
+                    <a href="<?php echo home_url(); ?>"><img
+                        class="header__img"
+                        src="<?php echo get_template_directory_uri(); ?>/img/ロゴbk_枠なし.png"
+                        alt="Hitokado"/></a>
                 </h1>
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="<?php echo get_permalink( get_page_by_path( 'about' )->ID );?>" class="header__link">HITOKADOについて</a>
+                            <a
+                                href="<?php echo get_permalink( get_page_by_path( 'about' )->ID );?>"
+                                class="header__link">HITOKADOについて</a>
                         </li>
                         <li class="header__item">
-                            <a href="<?php echo get_permalink( get_page_by_path( 'news' )->ID );?>" class="header__link">お知らせ</a>
+                            <a
+                                href="<?php echo get_permalink( get_page_by_path( 'news' )->ID );?>"
+                                class="header__link">お知らせ</a>
                         </li>
                         <li class="header__item">
-                            <a href="<?php echo get_permalink( get_page_by_path( 'coworking' )->ID );?>" class="header__link">サービス</a>
+                            <a
+                                href="<?php echo get_permalink( get_page_by_path( 'coworking' )->ID );?>"
+                                class="header__link">サービス</a>
                         </li>
                         <li class="header__item">
-                            <a href="<?php echo get_permalink( get_page_by_path( 'memberList' )->ID );?>" class="header__link">メンバー紹介</a>
+                            <a
+                                href="<?php echo get_permalink( get_page_by_path( 'memberList' )->ID );?>"
+                                class="header__link">メンバー紹介</a>
                         </li>
                         <li class="header__item">
                             <a href="" class="header__link">料金</a>
@@ -41,16 +57,24 @@
                 <nav>
                     <ul class="nav-items" id="sub-navi">
                         <li class="nav-item">
-                            <a href="<?php echo get_permalink( get_page_by_path( 'about' )->ID );?>" class="nav-link">HITOKADOについて</a>
+                            <a
+                                href="<?php echo get_permalink( get_page_by_path( 'about' )->ID );?>"
+                                class="nav-link">HITOKADOについて</a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo get_permalink( get_page_by_path( 'news' )->ID );?>" class="nav-link">お知らせ</a>
+                            <a
+                                href="<?php echo get_permalink( get_page_by_path( 'news' )->ID );?>"
+                                class="nav-link">お知らせ</a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo get_permalink( get_page_by_path( 'coworking' )->ID );?>" class="nav-link">サービス</a>
+                            <a
+                                href="<?php echo get_permalink( get_page_by_path( 'coworking' )->ID );?>"
+                                class="nav-link">サービス</a>
                         </li>
                         <li class="nav-item">
-                            <a href="<?php echo get_permalink( get_page_by_path( 'memberList' )->ID );?>" class="nav-link">メンバー紹介</a>
+                            <a
+                                href="<?php echo get_permalink( get_page_by_path( 'memberList' )->ID );?>"
+                                class="nav-link">メンバー紹介</a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link">料金</a>

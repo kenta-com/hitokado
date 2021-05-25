@@ -20,6 +20,7 @@
         line-height: 1.5;
     }
     &__subcaption {
+        @include nova;
         width: 80%;
         max-width: 1366px;
         margin:58px auto 0 auto;
@@ -49,7 +50,7 @@
         padding: 20px 0;
         span {
             display: block;
-            margin: 18px;
+            margin: 23px;
         }
     }
     &__img {

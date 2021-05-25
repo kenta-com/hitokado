@@ -11,8 +11,10 @@
         @include section-subtitle;
     }
     &__img {
+        height: 662px;
         display: block;
         width: 100%;
+        object-fit: cover;
         margin-top: 53px;
     }
 }
@@ -27,8 +29,10 @@
     &__title {
         font-size: 34px;
         letter-spacing: 1.7px;
-        @include notojp-m;
         line-height: 1.5;
+        @include mq(sp){
+            width: 100%;
+        }
     }
     &__subtitle {
         @include nova;
@@ -37,9 +41,10 @@
     &__text {
         @include mq(sp){
             width: 100%;
-            margin-top: 20px;
+            margin: 20px  0 0 0;
         }
-        width:45%;
+        margin: 0 0 0 70px;
+        width:60%;
         line-height: 2;
     }
 }

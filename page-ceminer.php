@@ -69,7 +69,7 @@
                     <img
                         src="<?php echo get_template_directory_uri(); ?>/img/jonathan-kemper-zSCHyhiRSeQ-unsplash.jpg"
                         alt=""
-                        class="about-member__img">
+                        class="ceminer-member__img">
                     <div class="ceminer-member__content">
                         <p class="ceminer-member__name">黒田 史子</p>
                         <p class="ceminer-member__subname">AYAKO KURODA</p>

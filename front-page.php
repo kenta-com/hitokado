@@ -15,7 +15,7 @@
             class="mv__back-img"/>
         <div class="mv-title">
             <img
-                src="<?php echo get_template_directory_uri(); ?>/img/logo.png"
+                src="<?php echo get_template_directory_uri(); ?>/img/logo_白.png"
                 alt=""
                 class="mv-title__logo-img"/>
             <h2 class="mv-title__caption">COWORKING SPACE IN SHIGA</h2>

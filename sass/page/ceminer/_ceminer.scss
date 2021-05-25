@@ -9,20 +9,23 @@
         @include section-subtitle;
     }
     &__img {
-        display: block;
         width: 80%;
-        max-width: 1366px;
+        display: block;
+        object-fit: cover;
+        max-width: 1180px;
+        max-height: 785px;
         margin: 53px auto 0;
     }
     &__caption {
         margin: 72px auto 0;
-        width: calc(80% *0.65);
-        max-width:  calc(1180px *0.65);
+        width: 60%;
+        max-width:  686px;
+        max-height: 298px;
         line-height: 2;
     }
 }
 .ceminer-about {
-    margin-top: $title-top;
+    margin-top:134px;
     &__title {
         @include section-title;
         text-align: center;
@@ -108,10 +111,11 @@
     }
     &__img {
         object-fit: cover;
-        height: 508px;
-        @include container(85%);
+        width: 80%;
+        max-width: 960px;
         display: block;
         z-index: -1;
+        margin:  0 auto;
         position: relative;
     }
     &__content {
@@ -120,9 +124,9 @@
         box-sizing: border-box;
         padding: 56px;
         position: relative;
-        width: 65%;
+        width: 60%;
         margin: 0 auto;
-        max-width: calc(1336px *0.65);
+        max-width:698px;
         transform: translateY(-30px);
     }
     &__name {

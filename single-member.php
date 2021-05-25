@@ -4,8 +4,8 @@ the_post();
 ;?>
         <main class="main">
             <section class="single-member">
-                <p class="single-member__title">MEMBER</p>
-                <p class="single-member__subtitle">運営メンバー</p>
+                <p class="single-member__title">MEMBERS</p>
+                <p class="single-member__subtitle">メンバー紹介</p>
                 <div class="single-member__box">
 
 <!-- ループしたいHTMLをここに置く -->
