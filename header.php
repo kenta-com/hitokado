@@ -44,10 +44,10 @@
                                 class="header__link">メンバー紹介</a>
                         </li>
                         <li class="header__item">
-                            <a href="" class="header__link">料金</a>
+                            <a href="#price" class="header__link">料金</a>
                         </li>
                         <li class="header__item">
-                            <a href="" class="header__link">アクセス</a>
+                            <a href="#access" class="header__link">アクセス</a>
                         </li>
                     </ul>
                 </nav>

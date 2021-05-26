@@ -28,7 +28,7 @@ $breakpoints: (
     }
 }
 body {
-    overflow-x: hidden;
+    // overflow-x: hidden;
     font-family: noto-sans-cjk-jp, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -37,4 +37,7 @@ body {
         font-size: 13px;
         letter-spacing: 1.3px;
     }
+}
+html{
+    scroll-behavior: smooth;
 }

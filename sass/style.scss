@@ -32,6 +32,7 @@
 @import "module/amenity";
 @import "module/price";
 @import "module/page-nation";
+@import "module/reservation";
 // ==========================================================================
 // page
 // ==========================================================================
@@ -61,3 +62,4 @@
 // plugins
 // ==========================================================================
 @import "plugin/swiper";
+@import "plugin/calener";

@@ -34,7 +34,10 @@
         object-fit: cover;
         width: 65%;
         max-height: 510px;
-        @include mq(tab) {
+        @include mq(tab){
+            width: 80%;
+        }
+        @include mq(sp) {
             width: 100%;
         }
     }
