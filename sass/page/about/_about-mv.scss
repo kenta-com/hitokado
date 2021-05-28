@@ -31,7 +31,9 @@
         letter-spacing: 1.7px;
         line-height: 1.5;
         @include mq(sp){
+            letter-spacing: 1.5px;
             width: 100%;
+            font-size: 20px
         }
     }
     &__subtitle {

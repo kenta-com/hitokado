@@ -31,6 +31,9 @@
         width: 60%;
         margin: 0 auto;
         transform: translateY(-30px);
+        @include mq(sp){
+            padding: 28px;
+        }
     }
     &__name {
         font-size: 14px;

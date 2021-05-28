@@ -18,6 +18,11 @@
         font-style: normal;
         font-size: 34px;
         line-height: 1.5;
+        letter-spacing: 1,7px;
+        @include mq(sp){
+            letter-spacing: 1px;
+            font-size: 20px;
+        }
     }
     &__subcaption {
         @include nova;
