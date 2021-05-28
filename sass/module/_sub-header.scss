@@ -99,6 +99,24 @@
 }
 .nav-link {
     padding: 20px 0;
-    margin: 20px 0;
+    margin: 15px 0;
     display: block;
+    @include mq(sp){
+        margin: 10px 0;
+    }
+    &-child{
+        font-size: 14px;
+        display: block;
+        margin: 10px 0;
+        @include mq(sp){
+            margin: 8px 0;
+        }
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+.nav-item:nth-of-type(2){
+    .nav-link{
+        margin: 15px 0 5px 0;
+    }
 }

@@ -65,6 +65,10 @@
                             <a
                                 href="<?php echo get_permalink( get_page_by_path( 'news' )->ID );?>"
                                 class="nav-link">お知らせ</a>
+                                <!-- <ul>
+                                    <li class="nav-item-child"><a href="" class="nav-link-child">NEWS</a></li>
+                                    <li class="nav-item-child"><a href="" class="nav-link-child">BLOG</a></li>
+                                </ul> -->
                         </li>
                         <li class="nav-item">
                             <a
@@ -73,14 +77,19 @@
                         </li>
                         <li class="nav-item">
                             <a
+                                href="<?php echo get_permalink( get_page_by_path( 'ceminer' )->ID );?>"
+                                class="nav-link">セミナー</a>
+                        </li>
+                        <li class="nav-item">
+                            <a
                                 href="<?php echo get_permalink( get_page_by_path( 'memberList' )->ID );?>"
                                 class="nav-link">メンバー紹介</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">料金</a>
+                            <a href="#price" class="nav-link">料金</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link">アクセス</a>
+                            <a href="#sccess" class="nav-link">アクセス</a>
                         </li>
                     </ul>
                 </nav>

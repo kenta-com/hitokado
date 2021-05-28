@@ -731,8 +731,32 @@ template {
 
 .nav-link {
   padding: 20px 0;
-  margin: 20px 0;
+  margin: 15px 0;
   display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-link {
+    margin: 10px 0;
+  }
+}
+
+.nav-link-child {
+  font-size: 14px;
+  display: block;
+  margin: 10px 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-link-child {
+    margin: 8px 0;
+  }
+}
+
+.nav-item:nth-of-type(2) .nav-link {
+  margin: 15px 0 5px 0;
 }
 
 .footer {
@@ -1066,11 +1090,6 @@ template {
 @media screen and (max-width: 767px) {
   .price-box2 {
     margin-top: 40px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .price-box2 {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -1150,10 +1169,22 @@ template {
   font-weight: 900;
 }
 
+@media screen and (max-width: 767px) {
+  .price-box2__price {
+    font-size: 26px;
+  }
+}
+
 .price-box2__price span {
   font-size: 16px;
   position: relative;
   left: -5px;
+}
+
+@media screen and (max-width: 767px) {
+  .price-box2__price span {
+    font-size: 13px;
+  }
 }
 
 .pagination {
@@ -2216,7 +2247,6 @@ template {
 .about-mv {
   margin: 174px auto 0 auto;
   max-width: 1366px;
-  width: 80%;
 }
 
 .about-mv__title {
@@ -2254,12 +2284,20 @@ template {
 .about-mv__img {
   height: 662px;
   display: block;
-  width: 100%;
+  width: 80%;
   object-fit: cover;
-  margin-top: 53px;
+  margin: 53px auto 0;
+}
+
+@media screen and (max-width: 767px) {
+  .about-mv__img {
+    width: 100%;
+    height: 397px;
+  }
 }
 
 .about-mv-content {
+  width: 80%;
   max-width: 943px;
   margin: 85px auto 0 auto;
   display: flex;
@@ -2294,15 +2332,20 @@ template {
 }
 
 .about-mv-content__text {
-  margin: 0 0 0 70px;
   width: 60%;
   line-height: 2;
+}
+
+@media screen and (max-width: 1179px) {
+  .about-mv-content__text {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .about-mv-content__text {
     width: 100%;
-    margin: 20px  0 0 0;
+    margin-top: 20px;
   }
 }
 
