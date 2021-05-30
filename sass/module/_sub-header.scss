@@ -3,7 +3,6 @@
     #sub-navi {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         transition: ease-out 0.4s;
         overflow-y: auto;
@@ -98,25 +97,26 @@
     top: 20px;
 }
 .nav-link {
-    padding: 20px 0;
-    margin: 15px 0;
+    width: 61%;
+    padding: 26px 0;
+    margin:  0 auto ;
+    font-size: 22px;
+    letter-spacing: 2.2px;
+    font-weight: bold;
     display: block;
+    border-top: 1px solid #CCCCCC;
     @include mq(sp){
-        margin: 10px 0;
+        width: 90%;
+        font-size: 18px;
+        letter-spacing: 1.8px;
     }
     &-child{
         font-size: 14px;
         display: block;
-        margin: 10px 0;
-        @include mq(sp){
-            margin: 8px 0;
-        }
         padding: 10px 0;
         text-align: center;
     }
-}
-.nav-item:nth-of-type(2){
-    .nav-link{
-        margin: 15px 0 5px 0;
+    &.fav-box{
+        margin: 0 auto;
     }
 }

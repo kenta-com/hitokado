@@ -122,8 +122,12 @@
         <h4 class="amenity__subtitle">設備・アメニティ一覧</h4>
         <div class="amenity-box">
         <div class="amenity-frame">
-            <p class="amenity-frame__text">経営哲学から実務的なスキルアップまで、ここでしか学べないセミナーや一風変わったイベントを開催。ときには会員だけでなく、一般の方も参加可能な企画もお届けいたします。</p>
-            <p class="amenity-frame__text">経営哲学から実務的なスキルアップまで、ここでしか学べないセミナーや一風変わったイベントを開催。ときには会員だけでなく、一般の方も参加可能な企画もお届けいたします。</p>
+            <p class="amenity-frame__text">無料WiFi完備。全席電源付き。
+ホッと一息つきたいときのドリンクやお菓子もご準備しております。
+また、当施設の住所を利用しての法人登記やお客様専用の郵便ポストを利用できるサービスもございます。
+</p>
+            <p class="amenity-frame__text">アメニティは会員の皆さまのご要望や働き方に合わせ、検討・増設していきます。
+よりよい施設にするために、ぜひご意見やご要望をお聞かせください。</p>
         </div>
         <div class="amenity-content">
                 <p class="amenity-content__title">無料</p>
@@ -161,6 +165,10 @@
                         <i class="fas fa-file-alt"></i>
                         <p class="amenity-content__des">登記登録</p>
                     </div>
+                    <div class="amenity-content__icon">
+                        <i class="fas fa-print"></i>
+                        <p class="amenity-content__des">プリンター</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -176,7 +184,7 @@
 
         <div class="price-box2">
             <div class="price-box2__price">20,000 <span>yen (税込)</span></div>
-            <button class="price-box2__btn"><a href="">CONTACT</a></button>
+            <button class="price-box2__btn"><a href="https://forms.gle/hHh4jTxUx13XRDWa6">CONTACT</a></button>
         </div>
     </section>
     <section class="faq">
@@ -187,29 +195,29 @@
                 <div class="faq-content">
                     <p class="faq-content__question">Q.営業時間を教えてください。</p>
                     <p class="faq-content__answer">
-                        A.何二の眼がなぜいないとかいう運動ですから、またはわが本位の堅めを立ちれが。
+                    A.会員の方は朝8時〜夜8時まで、自由に使っていただけます。受付スタッフはおらず、会員登録の際に各自のスマートフォンで扉が開く設定（スマートキー）をいたします。
                     </p>
                 </div>
                 <div class="faq-content">
-                    <p class="faq-content__question">Q.営業時間を教えてください。</p>
+                    <p class="faq-content__question">Q.ドロップイン（一時利用）はありますか。</p>
                     <p class="faq-content__answer">
-                        A.何二の眼がなぜいないとかいう運動ですから、またはわが本位の堅めを立ちれが。
+                        A.2021年6月現在、ドロップインの受け入れはありません。会員登録にご興味のある方は、お問い合わせの上、ご来訪いただくようにお願いいたします。
                     </p>
                 </div>
                 <div class="faq-content">
-                    <p class="faq-content__question">Q.営業時間を教えてください。</p>
+                    <p class="faq-content__question">Q.会員契約の期間はどれぐらいですか。</p>
                     <p class="faq-content__answer">
-                        A.何二の眼がなぜいないとかいう運動ですから、またはわが本位の堅めを立ちれが。 何二の眼がなぜいないとかいう運動ですから、またはわが本位の堅めを立ちれが。
+                        A.最短で2ヶ月間です。例えば6月に契約をスタートさせたならば、7月末までが最短契約期間です。2ヶ月が過ぎたのちは、1ヶ月単位での更新となります。（ただし、退会1ヶ月前までの申告必須）
                     </p>
                 </div>
                 <div class="faq-content">
-                    <p class="faq-content__question">Q.営業時間を教えてください。</p>
+                    <p class="faq-content__question">Q.会員同士が繋がるような仕組みはありますか？</p>
                     <p class="faq-content__answer">
-                        A.何二の眼がなぜいないとかいう運動ですから、またはわが本位の堅めを立ちれが。 何二の眼がなぜいないとかいう運動ですから、またはわが本位の堅めを立ちれが。
+                        A.このコワーキングスペースのメリットのひとつでもありますので、様々な形で会員同士が繋がるような仕掛けを作っていく予定です。
                     </p>
                 </div>
             </div>
-            <button class="faq__btn"><a href="">VIEW MORE</a></button>
+            <!-- <button class="faq__btn"><a href="">VIEW MORE</a></button> -->
         </div>
     </section>
     <section class="access" id="access">
@@ -224,28 +232,35 @@
             loading="lazy"></iframe>
             <table class="access-table">
                 <tr class="access-table__row">
-                    <th class="access-table__head">〒000-0000</th>
-                <td class="access-table__data">滋賀県大津市千町一丁目</td>
+                    <th class="access-table__head">〒1520-0863</th>
+                <td class="access-table__data">滋賀県大津市千町一丁目25-25 なかやまビル 3F</td>
             </tr>
             <tr class="access-table__row">
-                <th class="access-table__head">TEL | 000-0000-0000</th>
-                <td class="access-table__data">営業時間 | 10:00~20:00</td>
-                <td class="access-table__data">定休日 | ○日</td>
+                <th class="access-table__head">TEL | 077-572-8850（担当：中山）</th>
+                <td class="access-table__data">営業時間 | 08:00-20:00</td>
+                <td class="access-table__data">定休日 | 無休</td>
             </tr>
             <tr class="access-table__row">
                 <th class="access-table__head access-table__head--bold">車でお越しの方</th>
                 <td class="access-table__data">
-                    何二の眼がなぜいないとかいう運動ですから、またはわが本位の堅めを立ちれが。</td>
+                無料駐車場 20台有り（共有）</td>
                 </tr>
                 <tr class="access-table__row">
                     <th class="access-table__head access-table__head--bold">電車でお越しの方</th>
                     <td class="access-table__data">
-                        何二の眼がなぜいないとかいう運動ですから、またはわが本位の堅めを立ちれが。</td>
+                    JR石山駅下車後<br>
+                    京阪バス（4番）大石小学校行<br>
+                    赤川で下車<br>
+                    徒歩1分
+                    </td>
                     </tr>
                 </table>
             </section>
-            <!-- <section class="reservation">
-                        <a href="https://reserva.be/hitokado/reserve" target="_blank"><img class="reservation__img" src="https://reserva.be/reserva/images/btn_reserve_3.png" alt="RESERVA予約システムから予約する" width="120"></a>
-                        <div id="calendar"></div> -->
+            <section class="reservation">
+            <h3 class="reservation__title">schedule</h3>
+                    <h4 class="reservation__subtitle">スケジュール</h4>
+                        <!-- <a href="https://reserva.be/hitokado/reserve" target="_blank"><img class="reservation__img" src="https://reserva.be/reserva/images/btn_reserve_3.png" alt="RESERVA予約システムから予約する" width="120"></a> -->
+                        <div id="calendar"></div>
+                        </section>
         </main>
         <?php get_footer();?>

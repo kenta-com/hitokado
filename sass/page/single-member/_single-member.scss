@@ -15,6 +15,9 @@
         object-fit: cover;
         max-height: 508px;
         width: 80%;
+        @include mq(sp){
+            width: 90%;
+        }
         max-width: 960px;
         display: block;
         z-index: -1;
@@ -32,6 +35,7 @@
         margin: 0 auto;
         transform: translateY(-30px);
         @include mq(sp){
+            width: 80%;
             padding: 28px;
         }
     }
@@ -53,6 +57,9 @@
         width: 60%;
         max-width:698px;
         margin:120px auto 0;
+        @include mq(sp){
+            margin: 60px auto 0;
+        }
         line-height: 3;
     }
 }

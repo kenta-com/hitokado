@@ -1,8 +1,25 @@
-.reservation{
-  // margin-top: 174px;
-  max-width: 1336px;
-  width: 80%;
-  height: auto;
-  display: block;
-  margin:174px auto 0 auto;
+.reservation {
+    // margin-top: 174px;
+    max-width: 1336px;
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 174px auto 0;
+    &__title {
+        text-align: center;
+        @include section-title;
+    }
+    &__subtitle {
+        text-align: center;
+        @include section-subtitle;
+        margin-bottom: 50px;
+    }
+    a{
+      display: block;
+      text-align: center;
+    }
+}
+#calendar{
+  margin-top: 16px;
+  @include nova;
 }

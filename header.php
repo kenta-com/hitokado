@@ -57,18 +57,15 @@
                 <nav>
                     <ul class="nav-items" id="sub-navi">
                         <li class="nav-item">
-                            <a
-                                href="<?php echo get_permalink( get_page_by_path( 'about' )->ID );?>"
-                                class="nav-link">HITOKADOについて</a>
+                            <a href="<?php echo home_url(); ?>" class="nav-link">トップページ</a>
                         </li>
                         <li class="nav-item">
                             <a
                                 href="<?php echo get_permalink( get_page_by_path( 'news' )->ID );?>"
                                 class="nav-link">お知らせ</a>
-                                <!-- <ul>
-                                    <li class="nav-item-child"><a href="" class="nav-link-child">NEWS</a></li>
-                                    <li class="nav-item-child"><a href="" class="nav-link-child">BLOG</a></li>
-                                </ul> -->
+                            <!-- <ul> <li class="nav-item-child"><a href=""
+                            class="nav-link-child">NEWS</a></li> <li class="nav-item-child"><a href=""
+                            class="nav-link-child">BLOG</a></li> </ul> -->
                         </li>
                         <li class="nav-item">
                             <a
@@ -86,10 +83,27 @@
                                 class="nav-link">メンバー紹介</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#price" class="nav-link">料金</a>
+                            <a
+                                href="<?php echo get_permalink( get_page_by_path( 'reservation' )->ID );?>"
+                                class="nav-link">予約</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#sccess" class="nav-link">アクセス</a>
+                            <a
+                                href="https://forms.gle/hHh4jTxUx13XRDWa6"
+                                class="nav-link">お問合せ</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link fav-box">
+                                <a href="https://twitter.com/hitokado_shiga">
+                                    <i class="fab fa-twitter"></i >
+                                </a>
+                                <a href="https://www.instagram.com/hitokado_shiga/">
+                                    <i class="fab fa-instagram"></i >
+                                </a>
+                                <a href="https://www.facebook.com/hitokado.shiga">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -104,8 +118,15 @@
         </header>
         <h2 class="sub-title">COWORKING SPACE IN SHIGA</h2>
         <h3 class="contact">
-            CONTACT<span class="contact__slush">|</span >
-            <i class="fab fa-twitter contact__fav"></i >
-            <i class="fab fa-instagram contact__fav"></i >
-            <i class="fab fa-facebook-f contact__fav"></i>
+            <a href="https://forms.gle/hHh4jTxUx13XRDWa6">CONTACT</a>
+            <span class="contact__slush">|</span >
+            <i class="fab fa-twitter contact__fav">
+                <a href="https://twitter.com/hitokado_shiga"></a>
+            </i >
+            <i class="fab fa-instagram contact__fav">
+                <a href="https://www.instagram.com/hitokado_shiga/"></a>
+            </i >
+            <i class="fab fa-facebook-f contact__fav">
+                <a href="https://www.facebook.com/hitokado.shiga"></a>
+            </i>
         </h3>

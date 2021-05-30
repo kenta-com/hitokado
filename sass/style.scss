@@ -33,6 +33,7 @@
 @import "module/price";
 @import "module/page-nation";
 @import "module/reservation";
+@import "module/fav-box";
 // ==========================================================================
 // page
 // ==========================================================================
@@ -62,4 +63,4 @@
 // plugins
 // ==========================================================================
 @import "plugin/swiper";
-// @import "plugin/calener";
+@import "plugin/calener";

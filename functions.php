@@ -42,13 +42,13 @@ wp_enqueue_script(
   true
 );
 // calender.js
-// wp_enqueue_script(
-//   'calendar-script',
-//   get_template_directory_uri() . '/js/main.min.js',
-//   array(),
-//   false,
-//   true
-// );
+wp_enqueue_script(
+  'calendar-script',
+  get_template_directory_uri() . '/js/main.min.js',
+  array(),
+  false,
+  true
+);
 /* main.js */
 wp_enqueue_script(
   'main-script',

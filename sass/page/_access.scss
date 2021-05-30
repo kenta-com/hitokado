@@ -68,6 +68,10 @@ width: 50%;
     &--bold{
       font-size: 20px;
       font-weight: 900;
+      @include mq(sp){
+        font-size: 13px;
+
+      }
     }
   }
   &__data{
