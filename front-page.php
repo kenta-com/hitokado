@@ -15,7 +15,7 @@
             class="mv__back-img"/>
         <div class="mv-title">
             <img
-                src="<?php echo get_template_directory_uri(); ?>/img/logo_白.png"
+                src="<?php echo get_template_directory_uri(); ?>/img/logo-white.png"
                 alt=""
                 class="mv-title__logo-img"/>
             <h2 class="mv-title__caption">COWORKING SPACE IN SHIGA</h2>
@@ -28,7 +28,7 @@
         <h4 class="about__subtitle">HITOKADOについて</h4>
         <div class="about-box">
                 <img
-                    src="<?php echo get_template_directory_uri(); ?>/img/jonathan-kemper-zSCHyhiRSeQ-unsplash.jpg"
+                    src="<?php echo get_template_directory_uri(); ?>/img/about-img.png"
                     alt=""
                     class="about-box__img">
             <div class="about-box__content">

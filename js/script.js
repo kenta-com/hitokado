@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
   var calendarEl = document.getElementById('calendar');
   var calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: 'dayGridMonth',
-    googleCalendarApiKey: 'AIzaSyCkJWlOIbgV4tS8u7HPlbtOCVR5c2HJU_A',
+    googleCalendarApiKey: 'AIzaSyDCW1StaE6TEKCPjexZoc4vdU1W64zsCw4',
         events: {
-          googleCalendarId: 'qqqyya134@gmail.com',
+          googleCalendarId: 'hitokado.shiga@gmail.com',
         },
   });
   calendar.render();

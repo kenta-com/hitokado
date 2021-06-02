@@ -36,7 +36,7 @@
 
             </div>
             <img
-                src="<?php echo get_template_directory_uri(); ?>/img/jonathan-kemper-zSCHyhiRSeQ-unsplash.jpg"
+                src="<?php echo get_template_directory_uri(); ?>/img/services_img.png"
                 alt=""
                 class="about-concept-box__img">
         </div>

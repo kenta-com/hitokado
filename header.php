@@ -18,7 +18,7 @@
                 <h1 class="header__logo">
                     <a href="<?php echo home_url(); ?>"><img
                         class="header__img"
-                        src="<?php echo get_template_directory_uri(); ?>/img/ロゴbk_枠なし.png"
+                        src="<?php echo get_template_directory_uri(); ?>/img/logo-black.png"
                         alt="Hitokado"/></a>
                 </h1>
                 <nav class="header__nav">
@@ -74,7 +74,7 @@
                         </li>
                         <li class="nav-item">
                             <a
-                                href="<?php echo get_permalink( get_page_by_path( 'ceminer' )->ID );?>"
+                                href="<?php echo get_permalink( get_page_by_path( 'ceminerList' )->ID );?>"
                                 class="nav-link">セミナー</a>
                         </li>
                         <li class="nav-item">

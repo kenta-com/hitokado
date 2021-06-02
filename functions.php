@@ -84,6 +84,25 @@ function create_post_type() {
 			'supports' => array('title','editor','thumbnail','excerpt'),
     'show_ui' => true,
   ]);
+  //カスタム投稿タイプ２（ここから）
+  register_post_type('ceminer', [
+    'labels' => [
+      // 管理画面上で表示する投稿タイプ名
+      'name' => 'セミナー',
+      // 管理画面などで表示する名前（単数形）
+      'singular_name' => 'セミナー',
+      'all_items' => 'セミナー一覧',
+    ],
+    // パブリック設定（基本的にtrueにしておく）
+    'public' => true,
+    // アーカイブを有効にする
+    'has_archive' => true,
+    //ブロックエディタに変更
+    'show_in_rest' => true,
+			// 'supports'に'thumbnail'を追記
+			'supports' => array('title','editor','thumbnail','excerpt'),
+    'show_ui' => true,
+  ]);
 }
 
 // カスタム投稿にカテゴリーを追加//////////////////////////////////////////////////////
@@ -91,6 +110,23 @@ function category_init() {
   register_taxonomy(
     'member',//タクソノミー名
     'member',//投稿タイプを指定
+    array(
+      "label" => "カテゴリー",
+      "labels" => $labels,
+      "publicly_queryable" => true,
+      "hierarchical" => true,
+      "show_in_menu" => true,
+      "query_var" => true,
+      // "rewrite" => [ 'slug' => 'dep', 'with_front' => true, ], //カテゴリーのスラッグ
+      "show_admin_column" => false,
+      "show_in_rest" => true,
+      "rest_base" => "dep",
+      "show_in_quick_edit" => true,
+    )
+  );
+  register_taxonomy(
+    'ceminer',//タクソノミー名
+    'ceminer',//投稿タイプを指定
     array(
       "label" => "カテゴリー",
       "labels" => $labels,
