@@ -3,8 +3,8 @@
             <section class="ceminer-mv">
                 <h4 class="ceminer-mv__title">WORKSHOP</h4>
                 <h5 class="ceminer-mv__subtitle">セミナーについて</h5>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/back-main.png" alt="" class="ceminer-mv__img">
-                <p class="ceminer-mv__caption">この限り席のところこうしたお笑いは私中が押しますかと久原さんに立っまします、魚の絶対なけれにおいてご抑圧たいませでて、古参の時に元で時間だけの世の中に元来しがしまいて、これからの元来に罹っからその時を至極散らかすなんと出れたものないて、ないないないてはっきりご国家しなのなないます。ところが錐か危険か学習をなりたと、以後ごろ菓子に稼ぎていな以上にご意見の十一月となっましん。</p>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/IMG_ceminer.jpg" alt="セミナー" class="ceminer-mv__img">
+                <p class="ceminer-mv__caption">コワーキングスペースhitokadoでは、多種多様なセミナーやイベントを開催しております。会員様のみならず、一般の皆さまもお越し頂けるものもありますので、ぜひお気軽にお申し込みください。</p>
             </section>
             <section class="ceminer-about">
                 <h3 class="ceminer-about__title">
@@ -27,7 +27,7 @@ $member_query = new WP_Query(
     <?php if(has_post_thumbnail()): ?>
    <?php the_post_thumbnail(null, array('class' => 'ceminer-about-box__img')); ?>
  <?php else :?>
-<img src="<?php echo get_template_directory_uri(); ?>/img/no-img.png" alt="" class="ceminer-about-box__img" />
+<img src="<?php echo get_template_directory_uri(); ?>/img/no-img.png" alt="講座" class="ceminer-about-box__img" />
 <?php endif; ?>
                         <p class="ceminer-about-box__title"><?php the_title();?></p>
                         <div class="ceminer-about-info"><?php echo the_content(); ?></div>

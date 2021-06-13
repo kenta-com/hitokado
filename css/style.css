@@ -499,31 +499,26 @@ template {
 .page-btn {
   margin: 120px auto 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   font-family: gill-sans-nova, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   letter-spacing: 3.1px;
-  width: 60%;
   max-width: calc(1180px *0.8);
 }
 
 @media screen and (max-width: 767px) {
   .page-btn {
-    width: 80%;
     font-size: 20px;
     letter-spacing: 2.4px;
   }
 }
 
 .page-btn__link {
-  margin-top: 30px;
-}
-
-.page-btn__link:nth-of-type(0) {
-  margin: 0;
+  width: 30%;
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -1585,7 +1580,6 @@ template {
   font-weight: 500;
   font-style: normal;
   margin-top: 20px;
-  color: white;
   letter-spacing: 4.1px;
   font-size: 20px;
 }
@@ -2077,7 +2071,7 @@ template {
 }
 
 .faq__back {
-  background-image: url("../img/faq-back.png");
+  background-image: url("../img/IMG_faq.jpg");
   background-size: cover;
   padding: 56px 0;
   margin-top: 50px;
@@ -2571,10 +2565,9 @@ template {
 
 .about-member__img {
   object-fit: cover;
-  height: 508px;
   margin: 0 auto;
   width: 80%;
-  max-width: 960px;
+  max-width: 760px;
   display: block;
   z-index: -1;
   position: relative;
@@ -3210,6 +3203,7 @@ template {
   .coworking-box__img {
     margin-top: 50px;
     width: 100%;
+    max-height: 230px;
   }
 }
 
@@ -3259,6 +3253,7 @@ template {
 }
 
 .member-about {
+  display: block;
   text-align: center;
   margin-top: 52px;
   width: 20%;

@@ -22,13 +22,12 @@ $member_query = new WP_Query(
 <img src="<?php echo get_template_directory_uri(); ?>/img/no-img.png" alt="" class="member-about__img" />
 <?php endif; ?>
                         <p class="member-about__name"><?php the_title();?></p>
-                        <p class="member-about__caption"><?php echo mb_substr(get_the_excerpt(), 0, 60); ?></p>
+                        <!-- <p class="member-about__caption"><?php echo mb_substr(get_the_excerpt(), 0, 30); ?></p> -->
                     </a>
-                    <div class="btn">
   <?php endwhile; ?>
 <?php endif; ?>
 <?php wp_reset_postdata(); ?>
-                </div>
+</div>
             </section>
         </main>
 <?php get_footer();?>

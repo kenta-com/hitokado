@@ -16,13 +16,12 @@
     }
     &__img {
         object-fit: cover;
-        height: 508px;
         margin: 0 auto;
         width: 80%;
         @include mq(sp){
             width: 90%;
         }
-        max-width: 960px;
+        max-width: 760px;
         display: block;
         z-index: -1;
         position: relative;

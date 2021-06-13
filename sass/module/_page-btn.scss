@@ -1,22 +1,19 @@
 .page-btn{
   margin: 120px auto 0 auto;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: center;
   @include nova;
   font-weight: bold;
   font-size: 26px;
   letter-spacing: 3.1px;
-  width: 60%;
   max-width: calc(1180px *0.8);
   @include mq(sp){
-    width: 80%;
     font-size: 20px;
     letter-spacing: 2.4px;
   }
   &__link{
-    margin-top: 30px;
-    &:nth-of-type(0){
-      margin: 0;
-    }
+    width: 30%;
+    text-align: center;
   }
 }

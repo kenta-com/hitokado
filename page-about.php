@@ -4,8 +4,8 @@
         <h4 class="about-mv__title">ABOUT HITOKADO</h4>
         <h5 class="about-mv__subtitle">HITOKADOについて</h5>
         <img
-            src="<?php echo get_template_directory_uri();?>/img/back-main.png"
-            alt=""
+            src="<?php echo get_template_directory_uri();?>/img/IMG_enter.jpg"
+            alt="HITOKADOについて"
             class="about-mv__img">
         <div class="about-mv-content">
             <div class="about-mv-content__box">
@@ -37,7 +37,7 @@
             </div>
             <img
                 src="<?php echo get_template_directory_uri(); ?>/img/services_img.png"
-                alt=""
+                alt="コンセプト"
                 class="about-concept-box__img">
         </div>
     </section>
@@ -46,8 +46,8 @@
         <p class="about-member__subtitle">運営メンバー</p>
         <div class="about-member__box">
             <img
-                src="<?php echo get_template_directory_uri(); ?>/img/jonathan-kemper-zSCHyhiRSeQ-unsplash.jpg"
-                alt=""
+                src="<?php echo get_template_directory_uri(); ?>/img/kuroda.jpg"
+                alt="運営メンバー"
                 class="about-member__img">
             <div class="about-member__content">
                 <p class="about-member__name">黒田 史子</p>
@@ -56,13 +56,13 @@
                     滋賀大学経済学部卒業。Google正規代理店の取締役や東京のベンチャー会社の広報責任者を経て、現在は「業務効率化からSNSの使いこなしまで、なんでも分かりやすく伝える！」をモットーに、個人事業主の方や中小企業へのコンサル業務を行う。
                 </p>
                 <div class="fav-box">
-                    <!-- <a href="">
+                <a href="https://twitter.com/ayakokuroda">
                         <i class="fab fa-twitter"></i >
-                    </a> -->
-                    <a href="">
+                    </a>
+                    <a href="https://www.instagram.com/96chan_shiga/">
                         <i class="fab fa-instagram"></i >
                     </a>
-                    <a href="https://www.facebook.com/nakaspo">
+                    <a href="https://www.facebook.com/ayako.kuroda.030813">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </div>
@@ -70,21 +70,23 @@
         </div>
         <div class="about-member__box">
             <img
-                src="<?php echo get_template_directory_uri(); ?>/img/jonathan-kemper-zSCHyhiRSeQ-unsplash.jpg"
-                alt=""
+                src="<?php echo get_template_directory_uri(); ?>/img/nakayama.jpg"
+                alt="運営メンバー"
                 class="about-member__img">
             <div class="about-member__content">
-                <p class="about-member__name">黒田 史子</p>
-                <p class="about-member__subname">AYAKO KURODA</p>
-                <p class="about-member__text">この限り席のところこうしたお笑いは私中が押しますかと久原さんに立っまします、魚の絶対なけれにおいてご抑圧たいませでて、古参の時に元で時間だけの世の中に元来しがしまいて、これからの元来に罹っからその時を至極散らかすなんと出れたものないて、ないないないてはっきりご国家しなのなないます。ところが錐か危険か学習をなりたと、以後ごろ菓子に稼ぎていな以上にご意見の十一月となっましん。</p>
+                <p class="about-member__name">中山博識</p>
+                <p class="about-member__subname">NAKAYAMA HIRONORI</p>
+                <p class="about-member__text">創業50年のスポーツ店、株式会社中山スポーツの2代目社長です！
+地域総合スポーツ店では収まらず!(^^)!、ウォーキング専門店・100kmウォーキング・高地トレーニングジム・抗菌サービス事業・SUP・・そしてこの度　コワーキングスペースの運営を開始！新しいことが大好きで今後もコワーキングスペースに集まった人々と様々なことにチャレンジしていきたいと思います！
+</p>
                 <div class="fav-box">
-                    <a href="https://twitter.com/ayakokuroda">
+                    <!-- <a href="">
                         <i class="fab fa-twitter"></i >
-                    </a>
-                    <a href="https://www.instagram.com/96chan_shiga/">
+                    </a> -->
+                    <!-- <a href="">
                         <i class="fab fa-instagram"></i >
-                    </a>
-                    <a href="https://www.facebook.com/ayako.kuroda.030813">
+                    </a> -->
+                    <a href="https://www.facebook.com/nakaspo">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </div>

@@ -17,7 +17,7 @@
                         </p>
                     </div>
                     <img
-                        src="<?php echo get_template_directory_uri(); ?>/img/jonathan-kemper-zSCHyhiRSeQ-unsplash.jpg"
+                        src="<?php echo get_template_directory_uri(); ?>/img/IMG_entrance.jpg"
                         alt=""
                         class="coworking-box__img">
                 </div>
@@ -34,7 +34,7 @@
                         </p>
                     </div>
                     <img
-                        src="<?php echo get_template_directory_uri(); ?>/img/jonathan-kemper-zSCHyhiRSeQ-unsplash.jpg"
+                        src="<?php echo get_template_directory_uri(); ?>/img/IMG_concent.jpg"
                         alt=""
                         class="coworking-box__img">
                 </div>
@@ -51,7 +51,7 @@
                         </p>
                     </div>
                     <img
-                        src="<?php echo get_template_directory_uri(); ?>/img/jonathan-kemper-zSCHyhiRSeQ-unsplash.jpg"
+                        src="<?php echo get_template_directory_uri(); ?>/img/IMG_ceminer.jpg"
                         alt=""
                         class="coworking-box__img">
                 </div>
@@ -63,12 +63,12 @@
                         </p>
                         <p class="coworking-box__detail">
                             機械/設備<br>
-                            古参の時に元で時間だけの世の中に元来しがしまいて、これからの元来に罹っからその時を至極散らかすなんと出れたものないて、ないないないてはっきりご国家しなのなないます。ところが錐か危険か学習をなりたと、以後ごろ菓子に稼ぎていな以上にご意見の十一月となっましん。
+                           防音室、机１つ、椅子２つ、コンセント
 
                         </p>
                     </div>
                     <img
-                        src="<?php echo get_template_directory_uri(); ?>/img/jonathan-kemper-zSCHyhiRSeQ-unsplash.jpg"
+                        src="<?php echo get_template_directory_uri(); ?>/img/IMG_web.jpg"
                         alt=""
                         class="coworking-box__img">
                 </div>
@@ -80,12 +80,11 @@
                         </p>
                         <p class="coworking-box__detail">
                             機械/設備<br>
-                            古参の時に元で時間だけの世の中に元来しがしまいて、これからの元来に罹っからその時を至極散らかすなんと出れたものないて、ないないないてはっきりご国家しなのなないます。ところが錐か危険か学習をなりたと、以後ごろ菓子に稼ぎていな以上にご意見の十一月となっましん。
-
+                            防音室、机１つ、椅子１つ、コンセント
                         </p>
                     </div>
                     <img
-                        src="<?php echo get_template_directory_uri(); ?>/img/jonathan-kemper-zSCHyhiRSeQ-unsplash.jpg"
+                        src="<?php echo get_template_directory_uri(); ?>/img/IMG_speak.jpg"
                         alt=""
                         class="coworking-box__img">
                 </div>

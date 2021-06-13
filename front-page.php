@@ -2,21 +2,21 @@
 <main class="main">
     <section class="mv">
         <img
-            src="<?php echo get_template_directory_uri(); ?>/img/back-main3.jpg"
-            alt=""
+            src="<?php echo get_template_directory_uri(); ?>/img/IMG_entrance.jpg"
+            alt="メイン画像"
             class="mv__back-img"/>
         <img
-            src="<?php echo get_template_directory_uri(); ?>/img/back-main.png"
-            alt=""
+            src="<?php echo get_template_directory_uri(); ?>/img/IMG_inter.jpg"
+            alt="メイン画像"
             class="mv__back-img"/>
         <img
-            src="<?php echo get_template_directory_uri(); ?>/img/main-back2.jpg"
-            alt=""
+            src="<?php echo get_template_directory_uri(); ?>/img/IMG_one.jpg"
+            alt="メイン画像"
             class="mv__back-img"/>
         <div class="mv-title">
             <img
-                src="<?php echo get_template_directory_uri(); ?>/img/logo-white.png"
-                alt=""
+                src="<?php echo get_template_directory_uri(); ?>/img/logo-black.png"
+                alt="ロゴ"
                 class="mv-title__logo-img"/>
             <h2 class="mv-title__caption">COWORKING SPACE IN SHIGA</h2>
         </div>
@@ -28,8 +28,8 @@
         <h4 class="about__subtitle">HITOKADOについて</h4>
         <div class="about-box">
                 <img
-                    src="<?php echo get_template_directory_uri(); ?>/img/about-img.png"
-                    alt=""
+                    src="<?php echo get_template_directory_uri(); ?>/img/IMG_about.jpg"
+                    alt="HITOKADOについて"
                     class="about-box__img">
             <div class="about-box__content">
                 <p class="about-box__txt">【2021年6月オープン】滋賀県の石山にある瀬田川。その瀬田川を一望できるところにある、“わざわざ通いたくなる”完全会員制コワーキングスペース。それがhitokadoです。</p>
@@ -60,7 +60,7 @@
                     <?php if(has_post_thumbnail()): ?>
                     <?php the_post_thumbnail(null, array('class' => 'news-box__img')); ?>
                     <?php else :?>
-<img src="<?php echo get_template_directory_uri(); ?>/img/no-img.png" alt="" class="news-box__img" />
+<img src="<?php echo get_template_directory_uri(); ?>/img/no-img.png" alt="NO-IMAGE" class="news-box__img" />
 <?php endif; ?>
                         <p class="news-box__title"><?php the_title()?></p>
                         <div class="news-info">
@@ -86,8 +86,8 @@
         <div class="service-box">
             <a href="<?php echo get_permalink( get_page_by_path( 'coworking' )->ID );?>" class="service-box__link">
                 <img
-                    src="<?php echo get_template_directory_uri(); ?>/img/jonathan-kemper-zSCHyhiRSeQ-unsplash.jpg"
-                    alt=""
+                    src="<?php echo get_template_directory_uri(); ?>/img/IMG_service.jpg"
+                    alt="サービス"
                     class="service-box__img">
             </a>
                 <div class="service-box__content service-box__content--upper">
@@ -101,8 +101,8 @@
         <div class="service-box service-box--reverce">
             <a href="<?php echo get_permalink( get_page_by_path( 'ceminer' )->ID );?>" class="service-box__link">
                 <img
-                src="<?php echo get_template_directory_uri(); ?>/img/jonathan-kemper-zSCHyhiRSeQ-unsplash.jpg"
-                alt=""
+                src="<?php echo get_template_directory_uri(); ?>/img/IMG_ceminer.jpg"
+                alt="セミナー"
                 class="service-box__img">
             </a>
             <div class="service-box__content">
