@@ -34,12 +34,18 @@
             height: 178px;
             object-fit: cover;
             border-radius: 50%;
+            transition: .3s;
+            &:hover{
+                transition: .3s;
+                opacity: 0.5;
+            }
         }
         &__name {
             font-weight: bold;
             line-height: 2;
         }
         &__caption {
+            line-height: 1.5;
             color: #8E8E8E;
             letter-spacing: 1.4px;
         }

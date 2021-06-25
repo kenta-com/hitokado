@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header('header');?>
 <main class="main">
                 <section class="reservation">
                     <h3 class="reservation__title">reservstion</h3>

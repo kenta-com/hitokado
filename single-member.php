@@ -1,4 +1,4 @@
-<?php get_header();
+<?php get_header('header');
 the_post();
 // 記事を読み込み
 ;?>
@@ -20,7 +20,7 @@ the_post();
             <div class="single-member__content">
                 <p class="single-member__name"><?php the_title();?></p>
                 <div class="single-member__subname">
-                    <p><?php the_excerpt();?></p>
+                    <div><?php the_excerpt();?></div>
             </div>
 
         </div>

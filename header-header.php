@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!-- icon -->
         <link
             rel="icon"
@@ -41,10 +44,10 @@
                                 class="header__link">メンバー紹介</a>
                         </li>
                         <li class="header__item">
-                            <a href="#price" class="header__link">料金</a>
+                            <a href="<?php echo esc_url( home_url('/') ); ?>/#price" class="header__link">料金</a>
                         </li>
                         <li class="header__item">
-                            <a href="#access" class="header__link">アクセス</a>
+                            <a href="<?php echo esc_url( home_url('/') ); ?>/#access" class="header__link">アクセス</a>
                         </li>
                     </ul>
                 </nav>
@@ -117,7 +120,7 @@
         <h3 class="contact">
             <a href="https://forms.gle/hHh4jTxUx13XRDWa6">CONTACT</a>
             <span class="contact__slush">|</span >
-            <a href="https://twitter.com/hitokado_shiga"><i class="fab fa-twitter contact__fav"></i ></a>
+                <a href="https://twitter.com/hitokado_shiga"><i class="fab fa-twitter contact__fav"></i ></a>
                 <a href="https://www.instagram.com/hitokado_shiga/"><i class="fab fa-instagram contact__fav"></i ></a>
                 <a href="https://www.facebook.com/hitokado.shiga"><i class="fab fa-facebook-f contact__fav"></i></a>
         </h3>

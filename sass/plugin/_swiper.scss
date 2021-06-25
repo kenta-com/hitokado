@@ -1,3 +1,10 @@
 .swiper-container {
   @include sub-distance;
 }
+.swiper-slide{
+  transition: .3s;
+  &:hover{
+    transition: .3s;
+    opacity: .5;
+  }
+}

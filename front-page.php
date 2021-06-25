@@ -23,9 +23,9 @@
     </section>
     <section class="about">
         <h3 class="about__title">
-            ABOUT HITOKADO
+            ABOUT hitokado
         </h3>
-        <h4 class="about__subtitle">HITOKADOについて</h4>
+        <h4 class="about__subtitle">hitokadoについて</h4>
         <div class="about-box">
                 <img
                     src="<?php echo get_template_directory_uri(); ?>/img/IMG_about.jpg"
@@ -99,7 +99,7 @@
             </div>
         </div>
         <div class="service-box service-box--reverce">
-            <a href="<?php echo get_permalink( get_page_by_path( 'ceminer' )->ID );?>" class="service-box__link">
+            <a href="<?php echo get_permalink( get_page_by_path( 'ceminerlist' )->ID );?>" class="service-box__link">
                 <img
                 src="<?php echo get_template_directory_uri(); ?>/img/IMG_ceminer.jpg"
                 alt="セミナー"
@@ -110,7 +110,7 @@
                 <h6 class="service-box__subtitle">セミナー</h6>
                 <p class="service-box__txt">経営哲学から実務的なスキルアップまで、ここでしか学べないセミナーや一風変わったイベントを開催。ときには会員だけでなく、一般の方も参加可能な企画もお届けいたします。</p>
                 <button class="service-box__btn">
-                    <a href="<?php echo get_permalink( get_page_by_path( 'ceminer' )->ID );?>">
+                    <a href="<?php echo get_permalink( get_page_by_path( 'ceminerlist' )->ID );?>">
                         VIEW MORE
                     </a>
                 </button>
@@ -143,10 +143,6 @@
                     <div class="amenity-content__icon">
                         <i class="fas fa-mug-hot"></i>
                         <p class="amenity-content__des">フリードリンク</p>
-                    </div>
-                    <div class="amenity-content__icon">
-                        <i class="fas fa-print"></i>
-                        <p class="amenity-content__des">プリンター</p>
                     </div>
                     <div class="amenity-content__icon">
                         <i class="fas fa-parking"></i>

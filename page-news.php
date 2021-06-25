@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header('header');?>
         <main class="main">
             <div class="news-galary">
                 <h3 class="news-galary__title">

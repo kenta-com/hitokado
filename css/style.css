@@ -34,6 +34,10 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  object-fit: cover;
+}
+
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -3276,6 +3280,12 @@ template {
   height: 178px;
   object-fit: cover;
   border-radius: 50%;
+  transition: .3s;
+}
+
+.member-about__img:hover {
+  transition: .3s;
+  opacity: 0.5;
 }
 
 .member-about__name {
@@ -3284,6 +3294,7 @@ template {
 }
 
 .member-about__caption {
+  line-height: 1.5;
   color: #8E8E8E;
   letter-spacing: 1.4px;
 }
@@ -3398,6 +3409,15 @@ template {
 
 .swiper-container {
   margin-top: 50px;
+}
+
+.swiper-slide {
+  transition: .3s;
+}
+
+.swiper-slide:hover {
+  transition: .3s;
+  opacity: .5;
 }
 
 .fc-icon, .fc-unselectable {

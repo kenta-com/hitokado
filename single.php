@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header('header');?>
 <main class="main">
             <section class="single-news">
                 <p class="single-news__title">記事・ブログタイトル</p>

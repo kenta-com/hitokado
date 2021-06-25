@@ -1,4 +1,4 @@
-<?php get_header();?>
+<?php get_header('header');?>
         <main class="main">
             <section class="ceminer-mv">
                 <h4 class="ceminer-mv__title">WORKSHOP</h4>
