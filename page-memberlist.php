@@ -8,7 +8,7 @@
 $member_query = new WP_Query(
   array(
     'post_type'      => 'member',
-    'numberposts' => 15,
+    'posts_per_page' => -1, // 表示件数。 -1ならすべての投稿を取得
   )
 );
 ?>
