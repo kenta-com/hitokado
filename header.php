@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!-- icon -->
         <link
             rel="icon"
@@ -85,9 +88,7 @@
                                 class="nav-link">予約</a>
                         </li>
                         <li class="nav-item">
-                            <a
-                                href="https://forms.gle/hHh4jTxUx13XRDWa6"
-                                class="nav-link">お問合せ</a>
+                            <a href="https://forms.gle/hHh4jTxUx13XRDWa6" class="nav-link">お問合せ</a>
                         </li>
                         <li class="nav-item">
                             <div class="nav-link fav-box">
@@ -117,7 +118,13 @@
         <h3 class="contact">
             <a href="https://forms.gle/hHh4jTxUx13XRDWa6">CONTACT</a>
             <span class="contact__slush">|</span >
-            <a href="https://twitter.com/hitokado_shiga"><i class="fab fa-twitter contact__fav"></i ></a>
-                <a href="https://www.instagram.com/hitokado_shiga/"><i class="fab fa-instagram contact__fav"></i ></a>
-                <a href="https://www.facebook.com/hitokado.shiga"><i class="fab fa-facebook-f contact__fav"></i></a>
+            <a href="https://twitter.com/hitokado_shiga">
+                <i class="fab fa-twitter contact__fav"></i >
+            </a>
+            <a href="https://www.instagram.com/hitokado_shiga/">
+                <i class="fab fa-instagram contact__fav"></i >
+            </a>
+            <a href="https://www.facebook.com/hitokado.shiga">
+                <i class="fab fa-facebook-f contact__fav"></i>
+            </a>
         </h3>

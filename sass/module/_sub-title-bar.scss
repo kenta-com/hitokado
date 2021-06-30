@@ -4,9 +4,6 @@
     left: 0;
     position: fixed;
     width: 100px;
-    @include mq(sp){
-        width: 10%;
-    }
     height: 100%;
     display: flex;
     justify-content: center;
@@ -17,9 +14,6 @@
     font-weight: 500;
     font-style: normal;
     transform: rotate(180deg);
-    @include mq(sp) {
-        font-size: 20px;
-    }
     @include mq(sp) {
         display: none;
     }
