@@ -9,7 +9,7 @@
             rel="icon"
             type="image/x-icon"
             href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico">
-        <title>hitokado</title>
+        <title>コワーキングスペースhitokado【公式】</title>
         <?php wp_head();?>
     </head>
     <body <?php body_class(); ?>>
@@ -19,7 +19,7 @@
                     <a href="<?php echo home_url(); ?>"><img
                         class="header__img"
                         src="<?php echo get_template_directory_uri(); ?>/img/logo-black.png"
-                        alt="Hitokado"/></a>
+                        alt="hitokado"/></a>
                 </h1>
                 <nav class="header__nav">
                     <ul class="header__list">

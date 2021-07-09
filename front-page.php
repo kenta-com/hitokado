@@ -228,11 +228,11 @@
             loading="lazy"></iframe>
             <table class="access-table">
                 <tr class="access-table__row">
-                    <th class="access-table__head">〒1520-0863</th>
+                    <th class="access-table__head">〒520-0863</th>
                 <td class="access-table__data">滋賀県大津市千町一丁目25-25 なかやまビル 3F</td>
             </tr>
             <tr class="access-table__row">
-                <th class="access-table__head">TEL | 077-572-8850（担当：中山）</th>
+                <th class="access-table__head">TEL | 077−523−2525（担当：中山）</th>
                 <td class="access-table__data">営業時間 | 08:00-20:00</td>
                 <td class="access-table__data">定休日 | 無休</td>
             </tr>
